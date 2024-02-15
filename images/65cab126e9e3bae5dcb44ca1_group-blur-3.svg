@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g opacity="0.7">
+        <g transform="matrix(0.930208,-0.367034,0.367034,0.930208,-215.907,452.663)">
+            <ellipse cx="1082.31" cy="794.051" rx="205.5" ry="98.5" style="fill:rgb(0,209,255);"/>
+        </g>
+    </g>
+    <g opacity="0.7">
+        <g transform="matrix(0.988406,-0.151836,0.151836,0.988406,-103.234,104.33)">
+            <ellipse cx="631.52" cy="728.129" rx="516.68" ry="189.88" style="fill:rgb(0,11,105);"/>
+        </g>
+    </g>
+    <g opacity="0.7">
+        <g transform="matrix(0.988406,-0.151836,0.151836,0.988406,-87.4269,157.339)">
+            <ellipse cx="986.52" cy="651.129" rx="516.68" ry="189.88" style="fill:rgb(82,0,255);"/>
+        </g>
+    </g>
+    <g opacity="0.7">
+        <g transform="matrix(0.988406,-0.151836,0.151836,0.988406,-22.9528,190.581)">
+            <ellipse cx="1236.42" cy="245.582" rx="280.88" ry="169.904" style="fill:rgb(0,9,91);"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,25.8702,-51.7991)">
+        <path d="M1272.42,685.311C951.765,829.477 635.865,892.477 641.553,905.128C647.241,917.779 988.515,898.742 1309.17,754.576C1625.29,612.449 2001.78,379.322 1847.77,391.872C1732.57,401.26 1581.51,569.85 1272.42,685.311Z" style="fill:rgb(98,255,255);fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(-0.972096,0.234582,-0.234582,-0.972096,1432.42,1506.8)">
+        <ellipse cx="626.595" cy="838.593" rx="575.667" ry="46.856" style="fill:url(#_Linear1);"/>
+    </g>
+    <g transform="matrix(0.845813,0,0,0.845452,200.18,138.495)">
+        <ellipse cx="1200.27" cy="667.433" rx="98.017" ry="94.439" style="fill:white;"/>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-214.757,226.653,-226.653,-214.757,626.595,791.737)"><stop offset="0" style="stop-color:rgb(59,0,21);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(255,54,78);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>
