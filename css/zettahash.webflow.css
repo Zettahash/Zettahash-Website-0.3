@@ -2,7 +2,7 @@
   --black: black;
   --hk: "Hanken Grotesk", sans-serif;
   --neutral-0: #fdfdfd;
-  --content: 1300px;
+  --content: 1500px;
   --neutral-10: #141414;
   --primary: #410be4;
   --gauze: rgba(0, 0, 0, .2);
@@ -298,7 +298,7 @@
   bottom: 0%;
   left: auto;
   right: 0%;
-  transform: translate(0, -8%);
+  transform: translate(0, -20%);
 }
 
 .image-3 {
@@ -360,7 +360,16 @@
 }
 
 .container.centred {
+  perspective: 2000px;
   align-items: center;
+}
+
+.container.centred.hashboard-parent {
+  perspective: 2000px;
+}
+
+.container.centred.comparison-parent-container {
+  perspective: 500px;
 }
 
 .container.cosy {
@@ -383,6 +392,8 @@
 }
 
 .container.flex-h.move-up-by-440px {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
   margin-top: 60px;
   top: auto;
 }
@@ -751,17 +762,22 @@
   bottom: auto;
   left: auto;
   right: 0%;
-  transform: rotateX(-180deg)rotateY(180deg)rotateZ(9deg);
+  transform: rotateX(-180deg)rotateY(0)rotateZ(-17deg);
 }
 
 .image-14 {
-  width: 500px;
+  z-index: 1;
+  width: 100%;
   height: auto;
-  max-width: 50vw;
+  max-width: 45vw;
+  position: relative;
 }
 
 .flex-block-3 {
   z-index: 2;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -805,8 +821,8 @@
 }
 
 .table-compare-wrapper.results {
-  width: 250px;
-  min-width: 250px;
+  width: 300px;
+  min-width: 300px;
   text-align: left;
   align-items: center;
 }
@@ -842,6 +858,7 @@
 .overflow-horizontal-scroll-table-wrapper {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  perspective: 2000px;
   justify-content: space-around;
   position: relative;
   overflow: auto;
@@ -871,7 +888,6 @@
 
 .table-comp-cell.bad-cell {
   color: var(--violet);
-  text-shadow: 0 1px 20px var(--violet);
 }
 
 .table-comp-cell.bad-x {
@@ -1017,6 +1033,35 @@
 
 .image-16 {
   display: none;
+}
+
+.image-17 {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  filter: blur(80px);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blur-holder-container {
+  height: 600px;
+  max-height: 45vw;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.image-18 {
+  z-index: 0;
+  width: 100%;
+  filter: blur(80px);
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  transform: translate(0, 237px);
 }
 
 @media screen and (max-width: 991px) {

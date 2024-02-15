@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Feb 15 2024 15:55:55 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Feb 15 2024 19:42:15 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65c8fe8076b6b8b794147a1a" data-wf-site="65c8fe8076b6b8b7941479f3">
 <head>
   <meta charset="utf-8">
@@ -86,6 +86,19 @@
   .hero{
   clip-path: polygon(0% 0%,100% 0%,100% 20%,66% 100%,66% 100%,0% 100%,0% 0%);
   }
+  .hero::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: #0026a4;
+    z-index: 1;
+    mix-blend-mode: multiply;
+    opacity: .7;
+}
   @media (max-width:500px){
     .hero{clip-path:unset;}
   }
@@ -113,7 +126,7 @@
               <source src="videos/zh-commissioned-transcode.mp4" data-wf-ignore="true">
               <source src="videos/zh-commissioned-transcode.webm" data-wf-ignore="true">
             </video></div>
-          <h1 class="hero-header"><strong class="bold-text blue-gradient">Welcome to Zettahash</strong></h1>
+          <h1 class="hero-header"><strong class="bold-text">Welcome to Zettahash</strong></h1>
           <div class="hero-head-secondary-text">We are the world&#x27;s first Decentralized<br>Autonomous Organization (DAO) for Bitcoin mining.</div>
           <div class="w-layout-hflex faux-list teal-gradient">
             <div>100% Community owned</div>
@@ -153,7 +166,7 @@
             </div>
           </div><img src="images/65cab126e9e3bae5dcb44ca1_group-blur-3.svg" loading="eager" alt="" class="image-7">
         </div>
-        <div data-w-id="5f9e26e1-42a1-932b-3f14-e5a133c8e987" class="w-layout-vflex container centred">
+        <div data-w-id="5f9e26e1-42a1-932b-3f14-e5a133c8e987" class="w-layout-vflex container centred hashboard-parent">
           <h2 class="major teal-gradient">Introducing Hashboard</h2>
           <div class="prominent centred">The Hub of the Zettahash Community.<br>Transparency Starts Here:</div>
           <div class="skew-device">
@@ -194,7 +207,7 @@
             <div class="prominent grow">We are a Community built on the principle<br>of Trust through Verifiability<br></div>
             <p class="major-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
             <a href="#" class="link arrow-right">Learn more</a>
-          </div><img src="images/65cab126e9e3bae5dcb44ca1_group-blur-5.svg" loading="lazy" alt="" class="blur-behing-phones">
+          </div><img src="images/65cc09e6b2fb04e891187803_65cab126e9e3bae5dcb44ca1_group-blur-11.svg" loading="lazy" alt="" class="blur-behing-phones">
         </div>
         <div data-w-id="4ddfae03-cd69-c757-d2d0-96b6a0d7e6af" class="w-layout-vflex container flex-h"><img src="images/65c996c7b857481554cd3c8f_group-blur-1.svg" loading="lazy" alt="" class="blur-behind-token">
           <div class="w-layout-hflex flex-block-3">
@@ -202,11 +215,13 @@
               <h2 class="major">Meet ZH Token.<br>The key that unlocks all of Zettahash.</h2>
               <div class="prominent grow">Holding ZH Token gives you a Voice, Voting Power and access to Profits.<br></div>
               <p class="major-paragraph left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-            </div><img src="images/zh1.webp" loading="lazy" data-w-id="4ddfae03-cd69-c757-d2d0-96b6a0d7e6bc" sizes="50vw" alt="Zettahash token image
-" srcset="images/zh1-p-500.webp 500w, images/zh1-p-800.webp 800w, images/zh1.webp 909w" class="image-14">
+            </div>
+            <div class="blur-holder-container"><img src="images/zh1.webp" loading="lazy" data-w-id="4ddfae03-cd69-c757-d2d0-96b6a0d7e6bc" sizes="45vw" alt="Zettahash token image
+" srcset="images/zh1-p-500.webp 500w, images/zh1-p-800.webp 800w, images/zh1.webp 909w" class="image-14"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
+" class="image-17"><img src="images/x.png" loading="lazy" alt="" class="image-18"></div>
           </div>
         </div>
-        <div data-w-id="e23ce3d5-6e1b-a1a8-2bb9-83273ae0c2e3" class="w-layout-vflex container centred">
+        <div class="w-layout-vflex container centred comparison-parent-container">
           <div class="w-layout-vflex container-head centred">
             <h2 class="major blue-gradient">Checking out the competition</h2>
             <div class="prominent grow">See how Zettahash compares to traditional mining companies.<br></div>
