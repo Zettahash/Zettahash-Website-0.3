@@ -1,1 +1,10 @@
-<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" viewBox="0 0 134 362" xmlns="http://www.w3.org/2000/svg"><g fill="none" transform="translate(1773.59 2293.25)"><path d="m-1773.59-2293.25h133.238v361.788h-133.238z"/><path d="m66.619 0v361.788l-66.725-66.725 66.725 66.725 65.79-65.79" stroke="#fff" stroke-width="19.48" transform="matrix(.776813 0 0 .928006 -1758.82 -2280.23)"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 134 362" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Artboard2" transform="matrix(1,0,0,1,1773.59,2293.25)">
+        <rect x="-1773.59" y="-2293.25" width="133.238" height="361.788" style="fill:none;"/>
+        <g transform="matrix(0.776813,0,0,0.928006,-1758.82,-2280.23)">
+            <path d="M66.619,0L66.619,361.788L-0.106,295.063L66.619,361.788L132.409,295.998" style="fill:none;stroke:white;stroke-width:19.48px;"/>
+        </g>
+    </g>
+</svg>

@@ -1,1 +1,18 @@
-<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 1375 802" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path clip-rule="evenodd" d="m0 0h1375v801.165h-1375z"/></clipPath><path d="m0 0h1375v801.165h-1375z" fill="none"/><g clip-path="url(#a)"><g fill-rule="nonzero" transform="matrix(.985944 0 0 .985944 -142.616 -346.173)"><path d="m1352.12 572.824c18.19 53.031-332.67 221.442-783.665 376.156-450.998 154.71-404.796 253.28-422.989 200.24-18.192-53.03 269.073-337.824 720.071-492.538 450.993-154.714 468.393-136.889 486.583-83.858z" fill="#4b19dd"/><path d="m1369.85 571.528c211.82-122.721 171.55-157.138 155.46-184.908 50.8-89.991-219.66 5.183-431.48 127.904-202.269 141.269-490.993 314.582-638.107 413.4 66.105-64.039 690.897-284.386 914.127-356.396z" fill="#62ffff"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1375 802" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="Artboard1" x="0" y="0" width="1375" height="801.165" style="fill:none;"/>
+    <clipPath id="_clip1">
+        <rect id="Artboard11" serif:id="Artboard1" x="0" y="0" width="1375" height="801.165"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g transform="matrix(0.985944,0,0,0.985944,-142.616,-346.173)">
+            <g>
+                <path d="M1352.12,572.824C1370.31,625.855 1019.45,794.266 568.455,948.98C117.457,1103.69 163.659,1202.26 145.466,1149.22C127.274,1096.19 414.539,811.396 865.537,656.682C1316.53,501.968 1333.93,519.793 1352.12,572.824Z" style="fill:rgb(75,25,221);fill-rule:nonzero;"/>
+            </g>
+            <g>
+                <path d="M1369.85,571.528C1581.67,448.807 1541.4,414.39 1525.31,386.62C1576.11,296.629 1305.65,391.803 1093.83,514.524C891.561,655.793 602.837,829.106 455.723,927.924C521.828,863.885 1146.62,643.538 1369.85,571.528Z" style="fill:rgb(98,255,255);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>

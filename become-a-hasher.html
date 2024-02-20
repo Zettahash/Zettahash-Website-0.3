@@ -1,0 +1,368 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue Feb 20 2024 01:45:12 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65d3bc49754f39543be15b54" data-wf-site="65c8fe8076b6b8b7941479f3">
+<head>
+  <meta charset="utf-8">
+  <title>Become a Hasher</title>
+  <meta content="Become a Hasher" property="og:title">
+  <meta content="Become a Hasher" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/zettahash.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Hanken Grotesk:200,regular,600,800,900,200italic,italic,600italic,800italic,900italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+.pri,
+.btn {
+  position: relative;
+  z-index: 1;
+}
+.pri::after,
+.btn.pri::after {
+  content: '';
+  height: calc(100% + 2px);
+  width: calc(100% + 2px);
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  background: linear-gradient(60deg, var(--primary), var(--accent));
+  z-index: -2;
+  border-radius: 5px;
+}
+.pri::before,
+.btn.pri::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: var(--neutral-10);
+  z-index: -1;
+  border-radius: 4px;
+}
+a[href*='https://webflow'] {
+  display: none !important;
+}
+.faux-list>div::before {
+  margin-right: 10px;
+  content: "\e92d";
+  font-family: "ico" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: .5;
+  -webkit-text-fill-color: var(--accent);
+}
+.ico::after {
+  margin-right: 10px;
+  font-family: "ico" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: .5;
+}
+.link.arrow-right::after {
+  content: "\e912";
+}
+.link.arrow-down::after {
+  content: "\e90c";
+}
+.link.link-external::after {
+  content: "\e95e";
+}
+.blue-gradient {
+  background: -webkit-linear-gradient(60deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.teal-gradient {
+  background: -webkit-linear-gradient(60deg, var(--teal), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 66% 100%, 66% 100%, 0% 100%, 0% 0%);
+}
+.hero::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: linear-gradient(60deg, #11005c, #00ffd1);
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+@media (max-width:500px) {
+  .hero {
+    clip-path: unset;
+  }
+}
+.body-wrapper {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100vw;
+}
+.zh-logo #z-icon {
+  height: 20px;
+  opacity: 0;
+  transform: scale(0.8);
+  transform-origin: 50% 50%;
+  transition: 200ms ease;
+}
+.zh-logo #z-icon path {
+  stroke: var(--neutral-1);
+}
+.zh-logo.animated #z-icon {
+  transform: scale(1);
+  opacity: 1;
+}
+.zh-logo.animated:hover [clip-path="url(#b)"] path,
+.zh-logo.animated:hover [clip-path="url(#f)"] path,
+.zh-logo.animated:hover [clip-path="url(#e)"] path,
+.zh-logo.animated:hover [clip-path="url(#c)"] path,
+.zh-logo.animated:hover [clip-path="url(#d)"] path {
+  stroke: var(--accent) !important;
+}
+.zh-logo.animated:hover #zhash {
+  fill: var(--accent);
+}
+.animated [clip-path="url(#b)"] path,
+.animated [clip-path="url(#f)"] path,
+.animated [clip-path="url(#e)"] path,
+.animated [clip-path="url(#c)"] path,
+.animated [clip-path="url(#d)"] path {
+  opacity: 0;
+}
+.animated [clip-path="url(#b)"] path {
+  animation: animateDashLong 1500ms 50ms ease forwards 1;
+}
+.animated [clip-path="url(#f)"] path {
+  animation: animateDash 1000ms 750ms linear forwards 1;
+}
+.animated [clip-path="url(#e)"] path {
+  animation: animateDash 1000ms 1000ms linear forwards 1;
+}
+.animated [clip-path="url(#c)"] path {
+  animation: animateDashShort 500ms 750ms linear forwards 1;
+}
+.animated [clip-path="url(#d)"] path {
+  animation: animateDashShort 500ms 1000ms linear forwards 1;
+}
+@keyframes animateDashShort {
+  from {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    opacity: 0.75;
+  }
+}
+@keyframes animateDash {
+  from {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    opacity: 0.75;
+  }
+}
+@keyframes animateDashLong {
+  from {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    opacity: 0;
+  }
+  to {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+  .nav-link.w--current{display:none;}
+</style>
+</head>
+<body class="body">
+  <div class="body-wrapper">
+    <div class="body-container"><img src="images/65c994cb128b8ce0c5cbabd7_group-blur-12.svg" loading="eager" alt="" class="image-2"><img src="images/65c996c7b857481554cd3c8f_group-blur-1.svg" loading="eager" alt="" class="image-3">
+      <div class="w-layout-hflex flex-block blur">
+        <a href="index.html" class="link-block zh-svg-logo w-inline-block"><img src="images/zettahash-webflow.svg" loading="lazy" alt="" class="zh-logo"></a>
+        <div data-animation="default" data-collapse="small" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+          <div class="w-container">
+            <a href="#" class="w-nav-brand"></a>
+            <nav role="navigation" class="nav-menu w-nav-menu">
+              <a href="/#zh-token" class="nav-link btn w-nav-link">ZH Token</a>
+              <a href="become-a-hasher.html" aria-current="page" class="nav-link btn w-nav-link w--current">Contribute</a>
+              <a href="https://hashboard.zettahash.org" target="_blank" class="nav-link btn pri w-nav-link"># Hashboard</a>
+            </nav>
+            <div class="menu-button w-nav-button">
+              <div class="w-icon-nav-menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-layout-vflex page-contents-wrapper-atf">
+        <div class="w-layout-vflex container become-a-hasher-container">
+          <div class="rotunda-head-container">
+            <div class="rotunda-head-wrapper">
+              <div class="rotunda-head"><img src="images/z-circle.svg" loading="lazy" data-w-id="fad1dda1-955c-ee86-3bdf-340c9eb5daec" alt="" class="rotunda-img smaller smallest"><img src="images/dash.svg" loading="lazy" data-w-id="122ecc18-4078-5a73-54e1-f8de54325851" alt="" class="rotunda-img smaller"><img src="images/z-circle.svg" loading="lazy" data-w-id="1800cfdf-fca7-3e56-bca1-d416311d77b0" alt="" class="rotunda-img"></div><img src="images/65cc09e6b2fb04e891187803_65cab126e9e3bae5dcb44ca1_group-blur-11.svg" loading="eager" alt="" class="image-7 subtle">
+              <div class="w-layout-vflex rotunda-head-text-container">
+                <h2 class="heading">Your <strong>Voice</strong>, Your <strong>Vote</strong>, Your <strong>Initiatives</strong></h2>
+                <div class="prominent">Participate in our Industry-first DAO.<br>Shape the future of Zettahash <br>and be part of the Revolution</div>
+                <a href="#" class="link arrow-right ico btn">Get started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="placeholder-please-delete"></div>
+      </div>
+      <div class="w-layout-hflex footer">
+        <div class="w-layout-vflex company-information">
+          <div class="w-layout-vflex company-name-tagline-container">
+            <div class="zh-logo"><img src="images/zettahash-webflow.svg" loading="lazy" alt="" class="zettahash-iconography"></div>
+            <div>We&#x27;re giving bitcoin mining back to the people!</div>
+          </div>
+          <div class="w-layout-hflex zettahash-company-address-and-flag-container"><img src="images/Flag_of_the_Marshall_Islands.svg.png" loading="lazy" sizes="(max-width: 479px) 40vw, 94.921875px" srcset="images/Flag_of_the_Marshall_Islands.svg-p-500.png 500w, images/Flag_of_the_Marshall_Islands.svg-p-800.png 800w, images/Flag_of_the_Marshall_Islands.svg-p-1080.png 1080w, images/Flag_of_the_Marshall_Islands.svg.png 1200w" alt="Flag of the Marshall Islands
+" class="mi-flag">
+            <div class="w-layout-vflex">
+              <h4 class="cosy">Zettahash DAO LLC</h4>
+              <div>PO Box 852, Long Island Rd,<br>Majuro, Marshall Islands MH 96960</div>
+            </div>
+          </div>
+          <div class="w-layout-vflex company-name-tagline-container">
+            <a href="https://flat18.co.uk" target="_blank" class="link-2">Powered by Flat 18⚡</a>
+          </div>
+        </div>
+        <div class="w-layout-hflex links-organiser">
+          <div class="w-layout-vflex footer-link-section">
+            <h4 class="links-organiser-heading">Shortcuts</h4>
+            <ul role="list" class="foolter-link-list w-list-unstyled">
+              <li>
+                <a href="https://hashboard.zettahash.org" target="_blank" class="footer-link"># Hashboard</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-layout-vflex footer-link-section">
+            <h4 class="links-organiser-heading">Support</h4>
+            <ul role="list" class="foolter-link-list w-list-unstyled">
+              <li>
+                <a href="https://github.com/Zettahash/bugs/issues/new" class="footer-link">Report a bug</a>
+              </li>
+              <li>
+                <a href="https://stats.uptimerobot.com/yGonKu6AE6" class="footer-link">Service Status</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-layout-vflex footer-link-section">
+            <h4 class="links-organiser-heading">Documentation</h4>
+            <ul role="list" class="foolter-link-list w-list-unstyled">
+              <li>
+                <a href="#" class="footer-link">Terms of Service</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-layout-vflex footer-link-section">
+            <h4 class="links-organiser-heading">Get in touch</h4>
+            <ul role="list" class="foolter-link-list w-list-unstyled">
+              <li>
+                <a href="https://github.com/Zettahash" target="_blank" class="footer-link">GitHub</a>
+              </li>
+              <li>
+                <a href="https://t.me/zettahashcommunity" target="_blank" class="footer-link">Telegram</a>
+              </li>
+              <li>
+                <a href="mailto:zetta@zettahash.org" class="footer-link">Email</a>
+              </li>
+            </ul>
+          </div>
+        </div><img src="images/Flag_of_the_Marshall_Islands.svg.png" loading="lazy" sizes="(max-width: 479px) 96vw, 50vw" srcset="images/Flag_of_the_Marshall_Islands.svg-p-500.png 500w, images/Flag_of_the_Marshall_Islands.svg-p-800.png 800w, images/Flag_of_the_Marshall_Islands.svg-p-1080.png 1080w, images/Flag_of_the_Marshall_Islands.svg.png 1200w" alt="Flag of the Marshall Islands
+" class="blur-footer"><img src="images/x.png" loading="lazy" alt="" class="blur-footer right">
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65c8fe8076b6b8b7941479f3" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script>
+  for (const c2c of document.querySelectorAll(".click-to-copy")) {
+    c2c.addEventListener("click", (event) => {
+      let text = event.target.hasAttribute('data-copy')? event.target.getAttribute('data-copy'):event.target.innerHTML
+      let temp = document.createElement('input')
+      temp.classList.add("temp-input")
+      document.body.append(temp)
+      temp.value = text
+      temp.select()
+      document.execCommand("copy")
+      document.querySelector('.temp-input').remove()
+      let originalText = event.target.innerHTML
+      let target = event.target
+      event.target.innerHTML = `${originalText} ✅`
+      setTimeout(()=>{
+        target.innerHTML = originalText
+      },2000)
+    })
+  }
+    async function importTokenToMetamask() {
+    try {
+      const wasAdded = await ethereum.request({
+        method: 'wallet_watchAsset',
+        params: {
+          type: 'ERC20',
+          options: {
+            address: '0x2c0e15190acb858bf74447928cbd8fb9709dcb19',
+            symbol: 'ZH',
+            decimals: 18,
+            image: 'https://uploads-ssl.webflow.com/65c8fe8076b6b8b7941479f3/65cce2b1be22336121eb5a3f_zettahash%20token%20icon%20circle.svg',
+          },
+        },
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+    for (const i2mm of document.querySelectorAll(".import-to-metamask")) {
+    i2mm.addEventListener("click", (event) => {
+      importTokenToMetamask()
+    })
+  }
+  let logoSVG = `<svg class="zh-logo animated" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 318 47" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path clip-rule="evenodd" d="m67989.8 46909.1h46.224v46.189h-46.224z"/></clipPath><clipPath id="b"><path clip-rule="evenodd" d="m91.508 216.009-16.008 86.258h376.552l-299.045 273.746h602.156l18.331-83.318h-394.203l301.039-276.686z"/></clipPath><clipPath id="c"><path clip-rule="evenodd" d="m815.854 300.051 16.737-84.042h-115.799l-92.888 84.042z"/></clipPath><clipPath id="d"><path clip-rule="evenodd" d="m17.15 491.971-16.737 84.042h115.798l92.889-84.042z"/></clipPath><clipPath id="e"><path clip-rule="evenodd" d="m621.318.949h94.005l-169.267 789.61h-94.004l41.063-192.217h94.146l27.135-126.58h-94.119l21.053-97.675 116.441-104.664 17.009-79.346h-94.141z"/></clipPath><clipPath id="f"><path clip-rule="evenodd" d="m303.105.949h94.004l-169.266 789.61h-94.005l41.064-192.217h94.146l41.649-194.287-116.06 101.004 36.025-184.335 98.084-.869 27.82-129.778h-94.141z"/></clipPath><g transform="matrix(6.86002 0 0 1 -466411 -46909.13215)"><path d="m67989.8 46909.1h46.224v46.189h-46.224z" fill="none"/><g clip-path="url(#a)"><g id="z-icon"><g transform="matrix(.00852708 0 0 .0584959 67989.8 46909.1)"><path d="m91.508 216.009-16.008 86.258h376.552l-299.045 273.746h602.156l18.331-83.318h-394.203l301.039-276.686z" fill="none"/><g clip-path="url(#b)"><path id="zed" d="m48.777 253.466h648.389-118.62l-313.072 283.662h-131.636 660.735" fill="none" stroke="#fff" stroke-width="94.02"/></g><path d="m815.854 300.051 16.737-84.042h-115.799l-92.888 84.042z" fill="none"/><g clip-path="url(#c)"><path id="horizontal_1" d="m578.546 258.03h286.018" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="94.02"/></g><path d="m17.15 491.971-16.737 84.042h115.798l92.889-84.042z" fill="none"/><g clip-path="url(#d)"><path id="horizontal_2" d="m-31.56 533.992h286.018" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="94.02"/></g><path d="m621.318.949h94.005l-169.267 789.61h-94.004l41.063-192.217h94.146l27.135-126.58h-94.119l21.053-97.675 116.441-104.664 17.009-79.346h-94.141z" fill="none"/><g clip-path="url(#e)"><path id="vertical_2" d="m676.956-28.386-187.559 860.148" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="94.02"/></g><path d="m303.105.949h94.004l-169.266 789.61h-94.005l41.064-192.217h94.146l41.649-194.287-116.06 101.004 36.025-184.335 98.084-.869 27.82-129.778h-94.141z" fill="none"/><g clip-path="url(#f)"><path id="vertical_1" d="m354.313-28.386-183.13 860.148" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="94.02"/></g></g></g><g id="zhash" fill="#fff" fill-rule="nonzero"><path d="m0-149.669h-89.823c-8.576 0-15.879 3.052-22.057 9.229-6.177 6.141-9.193 13.445-9.193 22.02v22.928c0 8.685 3.016 15.988 9.193 22.057 6.178 6.177 13.481 9.193 22.057 9.193h89.823c5.523 0 10.065 4.542 10.065 10.065v22.928c0 5.559-4.542 10.101-10.065 10.101h-89.823c-5.56 0-10.102-4.542-10.102-10.101v-1.998h-21.148v1.998c0 8.684 3.016 16.024 9.193 22.056 6.178 6.177 13.481 9.193 22.057 9.193h89.823c8.684 0 16.097-3.016 22.274-9.193s9.193-13.481 9.193-22.056v-22.928c0-8.539-3.016-15.879-9.193-22.02-6.177-6.177-13.59-9.193-22.274-9.193h-89.823c-5.56 0-10.102-4.542-10.102-10.102v-22.928c0-5.523 4.542-10.065 10.102-10.065h89.823c5.523 0 10.065 4.542 10.065 10.065v2.035h21.402v-2.035c0-8.575-3.016-15.879-9.193-22.02-6.177-6.177-13.59-9.229-22.274-9.229" transform="matrix(.0262725 0 0 .18023 68030.5 46950.1)"/><path d="m0 107.373h-99.888c-5.414 0-10.065-4.542-10.065-10.102v-32.993h109.953zm-10.065-128.521h-121.073v21.184h121.073c5.56 0 10.065 4.542 10.065 10.065v33.029h-131.138v54.141c0 8.685 3.053 16.025 9.23 22.057 6.141 6.177 13.444 9.193 22.02 9.193h121.326v-118.42c0-8.576-3.016-15.879-9.193-22.02-6.177-6.177-13.626-9.229-22.31-9.229" transform="matrix(.0262725 0 0 .18023 68026.3 46927)"/><path d="m0 107.373h-99.889c-5.414 0-10.101-4.542-10.101-10.102v-32.993h109.99zm-10.101-128.521h-121.037v21.184h121.037c5.559 0 10.101 4.542 10.101 10.065v33.029h-131.138v54.141c0 8.685 3.016 16.025 9.193 22.057 6.177 6.177 13.481 9.193 22.056 9.193h121.291v-118.42c0-8.576-3.016-15.879-9.193-22.02-6.177-6.177-13.59-9.229-22.31-9.229" transform="matrix(.0262725 0 0 .18023 68017 46927)"/><path d="m0-100.688h-100.034v-48.981h-21.148v198.65h21.148v-118.42c0-5.523 4.651-10.065 10.211-10.065h89.823c5.523 0 10.065 4.542 10.065 10.065v118.42h21.148v-118.42c0-8.575-3.016-15.879-9.193-22.02-6.177-6.177-13.481-9.229-22.02-9.229" transform="matrix(.0262725 0 0 .18023 68021.5 46941.3)"/><path d="m0-21.111h-109.954v-33.03c0-5.523 4.506-10.065 10.066-10.065h89.823c5.523 0 10.065 4.542 10.065 10.065zm-10.065-64.279h-89.823c-8.576 0-15.879 3.052-22.057 9.229-6.177 6.141-9.193 13.445-9.193 22.02v87.171c0 8.684 3.016 16.024 9.193 22.056 6.178 6.177 13.481 9.193 22.057 9.193h121.326v-21.147h-121.326c-5.56 0-10.066-4.542-10.066-10.102v-32.993h131.392v-54.178c0-8.575-3.052-15.879-9.229-22.02-6.141-6.177-13.59-9.229-22.274-9.229" transform="matrix(.0262725 0 0 .18023 68006.7 46938.5)"/><path d="m0-143.964h162.096l-162.096 136.297v28.597h185.788v-20.893h-161.988l161.988-136.189v-28.742h-185.788z" transform="matrix(.0262725 0 0 .18023 67997.7 46946.4)"/><path d="m0-198.651h-21.039v167.401c0 8.685 3.016 16.025 9.048 22.056 5.923 6.178 13.372 9.194 22.056 9.194h54.795v-21.148h-54.795c-5.414 0-10.065-4.542-10.065-10.102v-97.236h64.86v-21.184h-64.86z" transform="matrix(.0262725 0 0 .18023 68011.3 46950.1)"/><path d="m0-198.651h-21.039v167.401c0 8.685 3.016 16.025 9.084 22.056 5.923 6.178 13.336 9.194 22.02 9.194h54.795v-21.148h-54.795c-5.414 0-10.065-4.542-10.065-10.102v-97.236h64.86v-21.184h-64.86z" transform="matrix(.0262725 0 0 .18023 68008.6 46950.1)"/><path d="m0-82.229c-6.177-6.177-13.481-9.229-22.056-9.229h-99.998v-48.982h-21.184v198.651h21.184v-118.42c0-5.523 4.651-10.065 10.211-10.065h89.787c5.559 0 10.101 4.542 10.101 10.065v118.42h21.148v-118.42c0-8.576-3.016-15.879-9.193-22.02" transform="matrix(.0262725 0 0 .18023 68035.8 46939.6)"/></g></g></g></svg>`
+  for(const logo of document.querySelectorAll(".zh-svg-logo")){
+  	logo.innerHTML = logoSVG
+    logo.addEventListener("mouseenter", () => {
+    logo.querySelector(".zh-logo").classList.remove("animated")
+    setTimeout(() => {
+      logo.querySelector(".zh-logo").classList.add("animated")
+    }, 100)
+  })
+  }
+</script>
+</body>
+</html>
