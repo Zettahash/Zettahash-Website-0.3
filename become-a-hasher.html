@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue Feb 20 2024 01:45:12 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Feb 21 2024 01:44:57 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65d3bc49754f39543be15b54" data-wf-site="65c8fe8076b6b8b7941479f3">
 <head>
   <meta charset="utf-8">
@@ -19,35 +19,6 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <style>
-.pri,
-.btn {
-  position: relative;
-  z-index: 1;
-}
-.pri::after,
-.btn.pri::after {
-  content: '';
-  height: calc(100% + 2px);
-  width: calc(100% + 2px);
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  background: linear-gradient(60deg, var(--primary), var(--accent));
-  z-index: -2;
-  border-radius: 5px;
-}
-.pri::before,
-.btn.pri::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background: var(--neutral-10);
-  z-index: -1;
-  border-radius: 4px;
-}
 a[href*='https://webflow'] {
   display: none !important;
 }
@@ -205,12 +176,20 @@ a[href*='https://webflow'] {
     opacity: 1;
   }
 }
-  .nav-link.w--current{display:none;}
+</style>
+  <style>
+.tile:not([data-position-open="true"]){
+	display:none;
+}
+.heading-counter::after{
+	content: attr(data-open-positions-count);
+  margin-left: 10px;
+}
 </style>
 </head>
 <body class="body">
   <div class="body-wrapper">
-    <div class="body-container"><img src="images/65c994cb128b8ce0c5cbabd7_group-blur-12.svg" loading="eager" alt="" class="image-2"><img src="images/65c996c7b857481554cd3c8f_group-blur-1.svg" loading="eager" alt="" class="image-3">
+    <div class="body-container"><img src="images/65c994cb128b8ce0c5cbabd7_group-blur-12.svg" loading="eager" alt="" class="image-2"><img src="images/65cc09e6b2fb04e891187803_65cab126e9e3bae5dcb44ca1_group-blur-10.svg" loading="eager" alt="" class="image-3">
       <div class="w-layout-hflex flex-block blur">
         <a href="index.html" class="link-block zh-svg-logo w-inline-block"><img src="images/zettahash-webflow.svg" loading="lazy" alt="" class="zh-logo"></a>
         <div data-animation="default" data-collapse="small" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
@@ -219,7 +198,7 @@ a[href*='https://webflow'] {
             <nav role="navigation" class="nav-menu w-nav-menu">
               <a href="/#zh-token" class="nav-link btn w-nav-link">ZH Token</a>
               <a href="become-a-hasher.html" aria-current="page" class="nav-link btn w-nav-link w--current">Contribute</a>
-              <a href="https://hashboard.zettahash.org" target="_blank" class="nav-link btn pri w-nav-link"># Hashboard</a>
+              <a href="https://hashboard.zettahash.org" target="_blank" class="nav-link btn pri nav-pri w-nav-link"># Hashboard</a>
             </nav>
             <div class="menu-button w-nav-button">
               <div class="w-icon-nav-menu"></div>
@@ -235,12 +214,91 @@ a[href*='https://webflow'] {
               <div class="w-layout-vflex rotunda-head-text-container">
                 <h2 class="heading">Your <strong>Voice</strong>, Your <strong>Vote</strong>, Your <strong>Initiatives</strong></h2>
                 <div class="prominent">Participate in our Industry-first DAO.<br>Shape the future of Zettahash <br>and be part of the Revolution</div>
-                <a href="#" class="link arrow-right ico btn">Get started</a>
+                <a href="#" class="link arrow-down ico btn">Get started</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="placeholder-please-delete"></div>
+        <div class="w-layout-vflex container bg-blur-2"><img src="images/blur-16.svg" loading="eager" alt="" class="image-7 subtle flip"><img src="images/waves2.svg" loading="lazy" alt="" class="waves-graphic-centred">
+          <h2 class="heading heading-counter">Open EM Positions:</h2>
+          <div class="prominent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          <a href="#" class="link arrow-right ico">Learn more</a>
+          <div class="w-layout-hflex flex-container">
+            <h2 class="flex-container-heading">Elected Members</h2>
+            <div class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/f18-logo.svg" loading="lazy" alt="" class="profile-image-file"></div>
+              <h3 class="name">#Flat18</h3>
+              <div class="position">EM of Development</div>
+              <a href="https://app.ens.domains/flat18.zettahash.eth" target="_blank" class="address link">flat18.zettahash.eth</a>
+            </div>
+            <div class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/658f79d6729a651f8bd4326a_path21.svg" loading="lazy" alt="" class="profile-image-file"></div>
+              <h3 class="name">#CH (De-Central)</h3>
+              <div class="position">EM of Mining</div>
+              <a href="https://app.ens.domains/de-central.zettahash.eth" target="_blank" class="address link">de-central.zettahash.eth</a>
+            </div>
+            <div class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/658f79d6729a651f8bd4326a_path21.svg" loading="lazy" alt="" class="profile-image-file"></div>
+              <h3 class="name">#Jyn Urso<br>(De-Central)</h3>
+              <div class="position">EM of Strategy</div>
+              <a href="https://app.ens.domains/jyn-urso.zettahash.eth" target="_blank" class="address link">jyn.urso.zettahash.eth</a>
+            </div>
+            <div class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/658f79d6729a651f8bd4326a_path21.svg" loading="lazy" alt="" class="profile-image-file"></div>
+              <h3 class="name">#Corey<br>(De-Central)</h3>
+              <div class="position">EM of Web3</div>
+              <a href="https://app.ens.domains/corey.zettahash.eth" target="_blank" class="address link">corey.zettahash.eth</a>
+            </div>
+            <div class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/658f79d6729a651f8bd4326a_path21.svg" loading="lazy" alt="" class="profile-image-file"></div>
+              <h3 class="name">#Nilay<br>(De-Central)</h3>
+              <div class="position">EM of Energy</div>
+              <a href="https://app.ens.domains/nilay.zettahash.eth" target="_blank" class="address link">nilay.zettahash.eth</a>
+            </div>
+            <div data-position-open="true" class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
+" class="profile-image-file"></div>
+              <h3 class="name">Open</h3>
+              <div class="position">EM of Finance</div>
+              <a href="https://app.ens.domains/zettahash.eth" target="_blank" class="address link">zettahash.eth</a>
+            </div>
+            <div data-position-open="true" class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
+" class="profile-image-file"></div>
+              <h3 class="name">Open</h3>
+              <div class="position">EM of Legal</div>
+              <a href="https://app.ens.domains/zettahash.eth" target="_blank" class="address link">zettahash.eth</a>
+            </div>
+            <div data-position-open="true" class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
+" class="profile-image-file"></div>
+              <h3 class="name">Open</h3>
+              <div class="position">EM of Community</div>
+              <a href="https://app.ens.domains/zettahash.eth" target="_blank" class="address link">zettahash.eth</a>
+            </div>
+            <div data-position-open="true" class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
+" class="profile-image-file"></div>
+              <h3 class="name">Open</h3>
+              <div class="position">EM of Business</div>
+              <a href="https://app.ens.domains/zettahash.eth" target="_blank" class="address link">zettahash.eth</a>
+            </div>
+            <div data-position-open="true" class="w-layout-vflex tile profile">
+              <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
+" class="profile-image-file"></div>
+              <h3 class="name">Open</h3>
+              <div class="position">EM of Tokenomics</div>
+              <a href="https://app.ens.domains/zettahash.eth" target="_blank" class="address link">zettahash.eth</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-layout-vflex container centred hashboard-parent words-of-raphael">
+          <div class="rapael-text-quote w-clearfix">
+            <div class="prominent centred">Governments are good at cutting off the heads of centrally controlled networks like Napster, but pure P2P networks like Gnutella and Tor seem to be holding their own. </div>
+            <div class="text-block-2">&quot;</div>
+            <div class="text-block-3 teal-gradient"><strong>—Satoshi Nakamoto</strong></div>
+          </div>
+        </div>
       </div>
       <div class="w-layout-hflex footer">
         <div class="w-layout-vflex company-information">
@@ -363,6 +421,9 @@ a[href*='https://webflow'] {
     }, 100)
   })
   }
+</script>
+  <script>
+document.querySelector('.heading-counter').setAttribute('data-open-positions-count', document.querySelectorAll(`[data-position-open="true"]`).length)
 </script>
 </body>
 </html>

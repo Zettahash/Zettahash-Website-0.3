@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue Feb 20 2024 01:45:12 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Feb 21 2024 01:44:57 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65c8fe8076b6b8b794147a1a" data-wf-site="65c8fe8076b6b8b7941479f3">
 <head>
   <meta charset="utf-8">
@@ -17,35 +17,6 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <style>
-.pri,
-.btn {
-  position: relative;
-  z-index: 1;
-}
-.pri::after,
-.btn.pri::after {
-  content: '';
-  height: calc(100% + 2px);
-  width: calc(100% + 2px);
-  position: absolute;
-  left: -1px;
-  top: -1px;
-  background: linear-gradient(60deg, var(--primary), var(--accent));
-  z-index: -2;
-  border-radius: 5px;
-}
-.pri::before,
-.btn.pri::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background: var(--neutral-10);
-  z-index: -1;
-  border-radius: 4px;
-}
 a[href*='https://webflow'] {
   display: none !important;
 }
@@ -203,7 +174,12 @@ a[href*='https://webflow'] {
     opacity: 1;
   }
 }
-  .nav-link.w--current{display:none;}
+</style>
+  <style>
+.w-layout-hflex.flex-block.blur {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
 </style>
 </head>
 <body class="body">
@@ -217,7 +193,7 @@ a[href*='https://webflow'] {
             <nav role="navigation" class="nav-menu w-nav-menu">
               <a href="/#zh-token" class="nav-link btn w-nav-link">ZH Token</a>
               <a href="become-a-hasher.html" class="nav-link btn w-nav-link">Contribute</a>
-              <a href="https://hashboard.zettahash.org" target="_blank" class="nav-link btn pri w-nav-link"># Hashboard</a>
+              <a href="https://hashboard.zettahash.org" target="_blank" class="nav-link btn pri nav-pri w-nav-link"># Hashboard</a>
             </nav>
             <div class="menu-button w-nav-button">
               <div class="w-icon-nav-menu"></div>
@@ -377,17 +353,10 @@ a[href*='https://webflow'] {
             </div>
           </div>
         </div>
-        <div class="w-layout-vflex container centred hashboard-parent words-of-raphael">
-          <div class="rapael-text-quote w-clearfix">
-            <div class="prominent centred">Safeguarding the integrity and decentralization of Bitcoin begins by promoting the decentralization of Bitcoin mining companies.</div>
-            <div class="text-block-2">&quot;</div>
-            <div class="text-block-3 teal-gradient"># Raphael<br>—Founder</div>
-          </div>
-        </div>
         <div class="w-layout-vflex container bg-blur-2"><img src="images/blur-16.svg" loading="eager" alt="" class="image-7 subtle flip"><img src="images/waves-4.svg" loading="lazy" alt="" class="waves-graphic-centred subtle small">
           <h2 class="heading">The Zettahash Team</h2>
           <div class="prominent">Meet the talented community of Hashers and Elected Members behind the Zettahash Project.<br>We&#x27;re decentralized, spread all over the globe.</div>
-          <a href="#" class="link arrow-right ico">Learn more</a>
+          <a href="become-a-hasher.html" class="link arrow-right ico">Become a #Hasher</a>
           <div class="w-layout-hflex flex-container">
             <h2 class="flex-container-heading">Elected Members</h2>
             <div class="w-layout-vflex tile profile">
@@ -420,35 +389,35 @@ a[href*='https://webflow'] {
               <div class="position">EM of Energy</div>
               <a href="https://app.ens.domains/nilay.zettahash.eth" target="_blank" class="address link">nilay.zettahash.eth</a>
             </div>
-            <div class="w-layout-vflex tile profile">
+            <div data-position-open="true" class="w-layout-vflex tile profile">
               <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
 " class="profile-image-file"></div>
               <h3 class="name">Open</h3>
               <div class="position">EM of Finance</div>
               <a href="https://app.ens.domains/zettahash.eth" target="_blank" class="address link">zettahash.eth</a>
             </div>
-            <div class="w-layout-vflex tile profile">
+            <div data-position-open="true" class="w-layout-vflex tile profile">
               <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
 " class="profile-image-file"></div>
               <h3 class="name">Open</h3>
               <div class="position">EM of Legal</div>
               <a href="https://app.ens.domains/zettahash.eth" target="_blank" class="address link">zettahash.eth</a>
             </div>
-            <div class="w-layout-vflex tile profile">
+            <div data-position-open="true" class="w-layout-vflex tile profile">
               <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
 " class="profile-image-file"></div>
               <h3 class="name">Open</h3>
               <div class="position">EM of Community</div>
               <a href="https://app.ens.domains/zettahash.eth" target="_blank" class="address link">zettahash.eth</a>
             </div>
-            <div class="w-layout-vflex tile profile">
+            <div data-position-open="true" class="w-layout-vflex tile profile">
               <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
 " class="profile-image-file"></div>
               <h3 class="name">Open</h3>
               <div class="position">EM of Business</div>
               <a href="https://app.ens.domains/zettahash.eth" target="_blank" class="address link">zettahash.eth</a>
             </div>
-            <div class="w-layout-vflex tile profile">
+            <div data-position-open="true" class="w-layout-vflex tile profile">
               <div class="profile-pic"><img src="images/zettahash-token-icon-circle.svg" loading="lazy" alt="zettahash icon
 " class="profile-image-file"></div>
               <h3 class="name">Open</h3>
@@ -488,6 +457,13 @@ a[href*='https://webflow'] {
               <div class="position">Community</div>
               <a href="https://etherscan.io/address/0x2F126b80C83b942b93B3e8e64CE1577f150C4BF1" target="_blank" class="address link">0x2F12...4BF1</a>
             </div>
+          </div>
+        </div>
+        <div class="w-layout-vflex container centred hashboard-parent words-of-raphael">
+          <div class="rapael-text-quote w-clearfix">
+            <div class="prominent centred">Safeguarding the integrity and decentralization of Bitcoin begins by promoting the decentralization of Bitcoin mining companies.</div>
+            <div class="text-block-2">&quot;</div>
+            <div class="text-block-3 teal-gradient"># Raphael<br>—Founder</div>
           </div>
         </div>
       </div>
