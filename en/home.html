@@ -1,5 +1,5 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jun 15 2024 04:56:36 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="666bae650817af026608acc7" data-wf-site="664de4f406f296cc175c3570">
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Jun 17 2024 18:06:57 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="666db16e832653f698091885" data-wf-site="664de4f406f296cc175c3570">
 <head>
   <meta charset="utf-8">
   <title>Home</title>
@@ -25,87 +25,6 @@
   <link href="https://zettahash.org/en/home" rel="canonical">
   <script defer="" src="https://analytics.eu.umami.is/script.js" data-website-id="fee5d3c6-3368-43f4-8dd4-377e68f70b4f"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.zettahash.org/css/zettahash.org.css">
-  <style>
-.nav-block.blur {
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-}
-.cluster-spin{
-  transform-origin: 50% 50%;
-  animation: rotundaSpinCentre 60s forwards linear infinite;
-}
-.outer-cluster-spin{
-	animation-duration: 360s;
-}
-.inner-cluster-spin{
-	animation-duration: 180s;
-}
-@keyframes rotundaSpinCentre{
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-		transform: rotate(360deg);
-	}
-}
-.coin-frame{
-	animation: stepCoin 1500ms steps(20, end) forwards infinite;
-}
-@keyframes stepCoin{
-	100%{
-  	background-position: -100% 0%;
-  }
-}
-.hero::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  background: linear-gradient(60deg, #11005c, #00ffd1);
-  background: radial-gradient(ellipse at bottom right, var(--colours--cobalt) 10%,transparent 40%), radial-gradient(ellipse at top left, var(--colours--violet) -20%,transparent 40%),linear-gradient(60deg, #11005c, #00ffd1);
-  z-index: 1;
-  mix-blend-mode: multiply;
-}
-.hero-border-wrapper{
-	opacity:0;
-  transform: scale(1.2);
-  transform-origin: 50% 50%;
-  animation: 1000ms heroEaseIn ease forwards 1;
-  }
-.hero-header{
-	opacity:0;
-  transform: scale(1);
-  transform-origin: 50% 50%;
-  animation: 500ms heroEaseInChildren 1000ms ease forwards 1;
-  }
-.hero-head-secondary-text{
-	opacity:0;
-  transform: scale(1);
-  transform-origin: 50% 50%;
-  animation: 500ms heroEaseInChildren 1200ms ease forwards 1;
-  }
- .hero .faux-list{
-	opacity:0;
-  transform: scale(1);
-  transform-origin: 50% 50%;
-  animation: 500ms heroEaseInChildren 1400ms ease forwards 1;
-  }
-@keyframes heroEaseIn{
-	100%{
-  	opacity:1;
-    transform: scale(1);
-  }
-}
-@keyframes heroEaseInChildren{
-	100%{
-  	opacity:1;
-    transform: scale(1);
-  }
-}
-</style>
 </head>
 <body class="body">
   <div class="body-modifier w-embed w-script">
@@ -119,9 +38,9 @@ const rtlLocales = ['ar']
 </script>
   </div>
   <div class="body-wrapper">
-    <div class="body-container"><img src="../images/blur4.webp" loading="eager" sizes="(max-width: 767px) 100vw, 960px" srcset="../images/blur4-p-500.webp 500w, ../images/blur4.webp 800w" alt="" class="blur-32"><img src="../images/blur5.webp" loading="eager" srcset="../images/blur5-p-500.webp 500w, ../images/blur5.webp 1000w" alt="" sizes="100vw" class="image-29">
+    <div class="body-container"><img src="../images/blur4.webp" loading="eager" sizes="100vw" srcset="../images/blur4-p-500.webp 500w, ../images/blur4.webp 800w" alt="" class="blur-32"><img src="../images/blur5.webp" loading="eager" srcset="../images/blur5-p-500.webp 500w, ../images/blur5.webp 1000w" alt="" sizes="100vw" class="image-29">
       <div class="w-layout-hflex nav-block blur">
-        <a href="../index.html" class="link-block zh-svg-logo w-inline-block"><img src="../images/zettahash-webflow.svg" loading="lazy" width="150" alt="" class="zh-logo"></a>
+        <a href="../en/home.html" aria-current="page" class="link-block zh-svg-logo w-inline-block w--current"><img src="../images/zettahash-webflow.svg" loading="lazy" width="150" alt="" class="zh-logo"></a>
         <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
           <div class="container-2 w-container">
             <a href="#" class="brand w-nav-brand"></a>
@@ -163,7 +82,7 @@ const rtlLocales = ['ar']
         </div>
       </div>
       <div class="hero-wrapper">
-        <div class="shadows-blurs-container"><img src="../images/blur3.webp" loading="lazy" sizes="(max-width: 479px) 100vw, 290.50750732421875px" srcset="../images/blur3-p-500.webp 500w, ../images/blur3.webp 800w" alt="" class="image-49"><img src="../images/blur5.webp" loading="lazy" sizes="90vw" srcset="../images/blur5-p-500.webp 500w, ../images/blur5.webp 1000w" alt="" class="image-50"></div>
+        <div class="shadows-blurs-container"><img src="../images/blur3.webp" loading="lazy" sizes="(max-width: 991px) 100vw, (max-width: 1919px) 1065.194091796875px, 55vw" srcset="../images/blur3-p-500.webp 500w, ../images/blur3.webp 800w" alt="" class="image-49"><img src="../images/blur5.webp" loading="lazy" sizes="90vw" srcset="../images/blur5-p-500.webp 500w, ../images/blur5.webp 1000w" alt="" class="image-50"></div>
         <div class="hero-border-wrapper">
           <div class="w-layout-vflex hero">
             <div data-poster-url="https://uploads-ssl.webflow.com/65c8fe8076b6b8b7941479f3/65cd9316f390161c4132eb86_zh-commissioned-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/65d4f59afabe990d05bd8b5f/65da72d13d4f02927b3d58b5_zh-commissioned-poster-00001.jpg,https://uploads-ssl.webflow.com/65d4f59afabe990d05bd8b5f/65da72d13d4f02927b3d58b5_zh-commissioned-transcode.mp4,https://uploads-ssl.webflow.com/65d4f59afabe990d05bd8b5f/65da72d13d4f02927b3d58b5_zh-commissioned-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="574b78a0-908c-10fc-6a88-f70bd3ba2d23-video" autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/65c8fe8076b6b8b7941479f3/65cd9316f390161c4132eb86_zh-commissioned-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
@@ -194,6 +113,57 @@ document.querySelector('.hero video').style['background-image'] = `url(${poster}
 document.querySelector('.hero video source[src*=".jpg"]').setAttribute('src', poster)
 document.querySelector('.hero [data-poster-url*=".jpg"]').setAttribute('data-poster-url', poster)
 </script>
+          <style>
+.hero::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: linear-gradient(60deg, #11005c, #00ffd1);
+  background: radial-gradient(ellipse at bottom right, var(--colours--cobalt) 10%, transparent 40%), radial-gradient(ellipse at top left, var(--colours--violet) -20%, transparent 40%), linear-gradient(60deg, #11005c, #00ffd1);
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+.hero-border-wrapper {
+  opacity: 0;
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+  animation: 1000ms heroEaseIn ease forwards 1;
+}
+.hero-header {
+  opacity: 0;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  animation: 500ms heroEaseInChildren 1000ms ease forwards 1;
+}
+.hero-head-secondary-text {
+  opacity: 0;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  animation: 500ms heroEaseInChildren 1200ms ease forwards 1;
+}
+.hero .faux-list {
+  opacity: 0;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  animation: 500ms heroEaseInChildren 1400ms ease forwards 1;
+}
+@keyframes heroEaseIn {
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes heroEaseInChildren {
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+</style>
         </div>
       </div>
       <div class="w-layout-vflex page-contents-wrapper-atf">
@@ -260,7 +230,7 @@ document.querySelector('.hero [data-poster-url*=".jpg"]').setAttribute('data-pos
         </div>
         <div data-w-id="2d353e04-1e45-0eb2-0f87-fac41f65d44c" class="w-layout-vflex container flex-h move-up-by-440px centred-flex">
           <div class="w-layout-hflex overlap-image-flex">
-            <div class="glow glow-wide"></div><img src="../images/iphone-device-1_1.webp" loading="lazy" alt="mobile phone interface" class="image-25"><img src="../images/iphone-device-2_1.webp" loading="lazy" data-w-id="2d353e04-1e45-0eb2-0f87-fac41f65d450" sizes="(max-width: 767px) 100vw, 409.7890625px" alt="mobile phone interface" srcset="../images/iphone-device-2_1iphone-device-2.webp 500w, ../images/iphone-device-2_1.webp 530w" class="image-27"><img src="../images/horizontal.png" loading="lazy" sizes="(max-width: 479px) 75vw, (max-width: 767px) 208.796875px, 100vw" srcset="../images/horizontal-p-500.png 500w, ../images/horizontal.png 792w" alt="horizontal iphone
+            <div class="glow glow-wide"></div><img src="../images/iphone-device-1_1.webp" loading="lazy" alt="mobile phone interface" class="image-25"><img src="../images/iphone-device-2_1.webp" loading="lazy" data-w-id="2d353e04-1e45-0eb2-0f87-fac41f65d450" sizes="(max-width: 767px) 100vw, 409.7890625px" alt="mobile phone interface" srcset="../images/iphone-device-2_1iphone-device-2.webp 500w, ../images/iphone-device-2_1.webp 530w" class="image-27"><img src="../images/horizontal.png" loading="lazy" sizes="(max-width: 479px) 87vw, (max-width: 767px) 85vw, 100vw" srcset="../images/horizontal-p-500.png 500w, ../images/horizontal.png 792w" alt="horizontal iphone
 " class="image-23">
           </div>
           <div class="w-layout-vflex container-head"><img src="../images/blue-tick-shield.webp" loading="lazy" alt="" class="container-icon">
@@ -277,7 +247,7 @@ document.querySelector('.hero [data-poster-url*=".jpg"]').setAttribute('data-pos
             <a href="https://t.me/+_cUvJBA5G6E1ZTY8" target="_blank" class="link-block-2 btn w-inline-block"><img src="../images/telegram-5662082_1280.webp" loading="lazy" sizes="(max-width: 991px) 24px, (max-width: 1439px) 2vw, (max-width: 1919px) 24px, 1vw" height="Auto" alt="" srcset="../images/telegram-5662082_1280-p-500.webp 500w, ../images/telegram-5662082_1280-p-800.webp 800w, ../images/telegram-5662082_1280-p-1080.webp 1080w, ../images/telegram-5662082_1280.webp 1280w" class="image-41">
               <div class="prominent link ico arrow-right">Zettahash Telegram Group</div>
             </a>
-          </div><img src="../images/paper-plane.webp" loading="lazy" sizes="(max-width: 479px) 80vw, (max-width: 767px) 40vw, (max-width: 991px) 28vw, (max-width: 1439px) 35vw, 500px" srcset="../images/paper-plane-p-500.webp 500w, ../images/paper-plane-p-800.webp 800w, ../images/paper-plane.webp 1081w" alt="3d paper plane for telegram" class="paper-plane">
+          </div><img src="../images/paper-plane.webp" loading="lazy" sizes="(max-width: 767px) 80vw, (max-width: 991px) 400px, 500px" srcset="../images/paper-plane-p-500.webp 500w, ../images/paper-plane-p-800.webp 800w, ../images/paper-plane.webp 1081w" alt="3d paper plane for telegram" class="paper-plane">
         </div>
         <div id="zh-token" data-w-id="13c5ce45-68ce-9866-bf4f-da070dc4c8e7" class="w-layout-vflex container flex-h"><img src="../images/blur5.webp" loading="lazy" sizes="100vw" srcset="../images/blur5-p-500.webp 500w, ../images/blur5.webp 1000w" alt="" class="blur-behind-token">
           <div class="w-layout-hflex flex-block-3">
@@ -394,14 +364,14 @@ document.querySelector('.hero [data-poster-url*=".jpg"]').setAttribute('data-pos
               <div class="zh-logo-2"><img src="../images/zettahash-webflow.svg" loading="lazy" alt="" class="zettahash-iconography"></div>
               <div><br>We&#x27;re giving bitcoin mining back to the public</div>
             </div>
-            <div class="w-layout-hflex zettahash-company-address-and-flag-container"><img src="../images/Flag_of_the_Marshall_Islands.svg.png" loading="lazy" width="Auto" sizes="94.9296875px" alt="Flag of the Marshall Islands
+            <div class="w-layout-hflex zettahash-company-address-and-flag-container"><img src="../images/Flag_of_the_Marshall_Islands.svg.png" loading="lazy" width="Auto" sizes="(max-width: 479px) 100vw, 94.9296875px" alt="Flag of the Marshall Islands
 " srcset="../images/Flag_of_the_Marshall_Islands.svg-p-500.png 500w, ../images/Flag_of_the_Marshall_Islands.svg-p-800.png 800w, ../images/Flag_of_the_Marshall_Islands.svg-p-1080.png 1080w, ../images/Flag_of_the_Marshall_Islands.svg.png 1200w" class="mi-flag-2">
               <div class="w-layout-vflex">
                 <h4 class="cosy">Zettahash DAO LLC</h4>
                 <div>PO Box 852, Long Island Rd<br>Majuro, Marshall Islands MH 96960</div>
               </div>
             </div>
-            <div class="w-layout-hflex zettahash-company-address-and-flag-container"><img src="../images/Flag_of_the_British_Virgin_Islands.svg_1.webp" loading="lazy" width="Auto" sizes="100px" alt="" srcset="../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 500w, ../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 800w, ../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 1080w, ../images/Flag_of_the_British_Virgin_Islands.svg_1.webp 1200w" class="mi-flag-2">
+            <div class="w-layout-hflex zettahash-company-address-and-flag-container"><img src="../images/Flag_of_the_British_Virgin_Islands.svg_1.webp" loading="lazy" width="Auto" sizes="(max-width: 479px) 100vw, 100px" alt="" srcset="../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 500w, ../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 800w, ../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 1080w, ../images/Flag_of_the_British_Virgin_Islands.svg_1.webp 1200w" class="mi-flag-2">
               <div class="w-layout-vflex">
                 <h4 class="cosy">ZH LIMITED</h4>
                 <div>3rd Floor, Yamraj Building, Market Square <br>P.O. Box 3175 Road Town, Tortola VG1110</div>
