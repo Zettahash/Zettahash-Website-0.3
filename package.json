@@ -1,0 +1,34 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A project to process HTML files and generate a JSON file with English strings for GitHub Pages",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/your-repo.git"
+  },
+  "keywords": [
+    "github-pages",
+    "html",
+    "json",
+    "build"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/your-repo/issues"
+  },
+  "homepage": "https://github.com/yourusername/your-repo#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "fs-extra": "^10.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
