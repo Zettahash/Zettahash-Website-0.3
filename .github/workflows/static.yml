@@ -32,10 +32,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: '14'
 
       - name: Install dependencies
         run: npm install
+
+      - name: Setup Google Cloud Credentials
+        run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > $HOME/gcloud-key.json
+
+      - name: Set GOOGLE_APPLICATION_CREDENTIALS
+        run: echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcloud-key.json" >> $GITHUB_ENV
+
+      - name: Set Neon Database URL
+        run: echo "NEON_DATABASE_URL=${{ secrets.NEON_DATABASE_URL }}" >> $GITHUB_ENV
 
       - name: Build the project
         run: npm run build

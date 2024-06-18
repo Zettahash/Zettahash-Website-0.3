@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A project to process HTML files and generate a JSON file with English strings for GitHub Pages",
   "main": "build.js",
+  "type": "module",
   "scripts": {
     "build": "node build.js",
     "deploy": "gh-pages -d dist"
@@ -24,9 +25,15 @@
   },
   "homepage": "https://github.com/yourusername/zettahash-website-0.3#readme",
   "dependencies": {
+    "@google-cloud/translate": "^6.2.6",
+    "@neondatabase/serverless": "^0.9.3",
     "cheerio": "^1.0.0-rc.10",
-    "fs-extra": "^10.0.0",
-    "path": "^0.12.7"
+    "dotenv": "^16.4.5",
+    "fs-extra": "^10.1.0",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "pg": "^8.12.0",
+    "ws": "^8.17.1"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
