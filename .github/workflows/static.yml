@@ -39,7 +39,7 @@ jobs:
 
       - name: Setup Google Cloud Credentials
         run: |
-          echo "${{ secrets.GOOGLE_CREDENTIALS }}" > $HOME/gcloud-key.json
+          echo "${{ secrets.GOOGLE_CREDENTIALS }}" | base64 --decode > $HOME/gcloud-key.json
           cat $HOME/gcloud-key.json # Debug step to check the contents
 
       - name: Set GOOGLE_APPLICATION_CREDENTIALS
