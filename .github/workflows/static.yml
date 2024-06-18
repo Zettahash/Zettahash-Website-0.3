@@ -38,7 +38,9 @@ jobs:
         run: npm install
 
       - name: Setup Google Cloud Credentials
-        run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > $HOME/gcloud-key.json
+        run: |
+          echo "${{ secrets.GOOGLE_CREDENTIALS }}" > $HOME/gcloud-key.json
+          cat $HOME/gcloud-key.json # Debug step to check the contents
 
       - name: Set GOOGLE_APPLICATION_CREDENTIALS
         run: echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcloud-key.json" >> $GITHUB_ENV
@@ -53,3 +55,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
