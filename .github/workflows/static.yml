@@ -54,6 +54,12 @@ jobs:
           git checkout gh-pages || git checkout --orphan gh-pages
           ls -al
 
+      - name: List directory contents
+        run: ls -la ./dist
+
+      - name: Check git status
+        run: git status
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
