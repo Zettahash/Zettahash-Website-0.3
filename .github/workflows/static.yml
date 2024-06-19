@@ -33,7 +33,10 @@ jobs:
           echo "$GOOGLE_CREDENTIALS" > $HOME/gcloud-key.json
           echo "Google Cloud Credentials:"
           cat $HOME/gcloud-key.json
-          jq . $HOME/gcloud-key.json > /dev/null || (echo "Invalid JSON in GOOGLE_CREDENTIALS" && exit 1)
+          if ! jq . $HOME/gcloud-key.json > /dev/null; then
+            echo "Invalid JSON in GOOGLE_CREDENTIALS"
+            exit 1
+          fi
 
       - name: Set GOOGLE_APPLICATION_CREDENTIALS
         run: echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcloud-key.json" >> $GITHUB_ENV
@@ -44,39 +47,33 @@ jobs:
       - name: Build the project
         run: node build.js
 
-      - name: Verify Build Output
-        run: ls -alh ./dist
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
 
-      - name: Upload production artifacts
-        uses: actions/upload-artifact@v3
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download production artifacts
+        uses: actions/download-artifact@v3
         with:
           name: dist
           path: ./dist
 
-  deploy:
-    runs-on: ubuntu-latest
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: ./dist
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Download artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: dist
-        path: ./dist
-
-    - name: Print working directory
-      run: pwd
-
-    - name: List root directory contents
-      run: ls -alh
-
-    - name: List ./dist directory contents
-      run: ls -alh ./dist
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
