@@ -2,21 +2,15 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: write
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -29,8 +23,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          submodules: false
-          
+          submodules: false # Ensure submodules are not initialized for node_modules
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
@@ -42,7 +36,6 @@ jobs:
       - name: Setup Google Cloud Credentials
         run: |
           echo "${{ secrets.GOOGLE_CREDENTIALS }}" | base64 --decode > $HOME/gcloud-key.json
-          cat $HOME/gcloud-key.json # Debug step to check the contents
 
       - name: Set GOOGLE_APPLICATION_CREDENTIALS
         run: echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcloud-key.json" >> $GITHUB_ENV
