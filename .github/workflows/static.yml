@@ -36,7 +36,6 @@ jobs:
           if ! jq . $HOME/gcloud-key.json > /dev/null; then
             echo "Invalid JSON in GOOGLE_CREDENTIALS"
             exit 1
-          fi
 
       - name: Set GOOGLE_APPLICATION_CREDENTIALS
         run: echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcloud-key.json" >> $GITHUB_ENV
@@ -46,6 +45,9 @@ jobs:
 
       - name: Build the project
         run: node build.js
+
+      - name: Verify Build Output
+        run: ls -alh ./dist
 
       - name: Upload production artifacts
         uses: actions/upload-artifact@v3
@@ -66,8 +68,10 @@ jobs:
         with:
           name: dist
 
+      - name: Verify Downloaded Artifacts
+        run: ls -alh ./dist
+
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
