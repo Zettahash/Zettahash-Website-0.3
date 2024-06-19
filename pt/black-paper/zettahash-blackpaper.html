@@ -1,0 +1,484 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Jun 18 2024 21:06:36 GMT+0000 (Coordinated Universal Time)  --><html data-wf-page="666b934d416e391def5218a0" data-wf-site="664de4f406f296cc175c3570"><head>
+  <meta charset="utf-8">
+  <title>Zettahash Blackpaper</title>
+  <meta content="Zettahash Blackpaper" property="og:title">
+  <meta content="Zettahash Blackpaper" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../../css/zettahash-static.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:regular,500,600,700","Source Code Pro:regular,500","Hanken Grotesk:200,regular,600,800,900,200italic,italic,600italic,800italic,900italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../../images/webclip.png" rel="apple-touch-icon">
+  <link href="https://zettahash.org/en/black-paper/zettahash-blackpaper" rel="canonical">
+  <script defer="" src="https://analytics.eu.umami.is/script.js" data-website-id="fee5d3c6-3368-43f4-8dd4-377e68f70b4f"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.zettahash.org/css/zettahash.org.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="w-layout-grid grid-2-columns header-siderbar-grid">
+      <div id="w-node-_53d28380-ec9d-4355-a8b3-10dbbfdecc90-bfdecc90" class="navigation-sidebar">
+        <div class="body-modifier w-embed w-script">
+          <script>
+const rtlLocales = ['ar']
+  for(const rtl of rtlLocales){
+    if(window.location.pathname.indexOf(`/${rtl}`)==0){
+		document.body.classList.add("rtl")
+    }
+  }
+</script>
+        </div>
+        <div class="sticky-top header-wrapper---main">
+          <div data-animation="over-left" class="sidebar-wrapper w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="64d4f0a2-1c35-aa35-3617-28f5770b3376" role="banner" data-duration="400" data-doc-height="1">
+            <div data-w-id="201a6539-5861-eb21-cd43-ef78f43feaef" class="content-sidebar">
+              <div class="sidebar-logo-section-container">
+                <div class="div-block-11">
+                  <a href="../../index.html" class="link-block zh-svg-logo w-inline-block"><img src="../../images/zettahash-webflow.svg" loading="lazy" width="150" alt="" class="zh-logo"></a>
+                </div>
+                <div class="hamburger-menu-wrapper header-btn w-nav-button">
+                  <div class="sidebar-collapse-icon-inner-container">
+                    <div class="hamburger-menu-bar top"></div>
+                    <div class="hamburger-menu-bar bottom"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mg-bottom-8px header-search-bar">
+                <form action="/search" class="mg-bottom-0 width-100 w-form">
+                  <div class="position-relative"><input class="input small search-icon-inside w-input" maxlength="256" name="query" placeholder="Search docs..." type="search" id="search" required="">
+                    <div class="line-rounded-icon search-input default"></div>
+                  </div><input type="submit" class="hidden-desktop w-button" value="Search">
+                </form>
+              </div>
+              <div class="sidebar-nav-menu-wrapper">
+                <div class="sidebar-nav-menu">
+                  <div>
+                    <div class="link-sidebar-wrapper none-border-top first">
+                      <div data-hover="false" data-delay="0" parent="org" class="dropdown-wrapper-sidebar w-dropdown">
+                        <address class="pad-menu-on-hover w-dropdown-toggle">
+                          <div class="dropdown-icon-wrapper invert"><img src="../../images/layers.svg" loading="eager" alt="" class="_w-h-100"></div>
+                          <div class="text-block">Organização</div>
+                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
+                        </address>
+                        <nav class="dropdown-list-sidebar w-dropdown-list">
+                          <div>
+                            <ul role="list" class="list w-list-unstyled">
+                              <li identifier="manifesto" class="dropdown-list-item">
+                                <a href="../../en/org/manifesto.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Manifesto 🪧</div>
+                                </a>
+                              </li>
+                              <li identifier="treasury-management" class="dropdown-list-item">
+                                <a href="../../en/org/treasury-management.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Gestão de Tesouraria 🪙</div>
+                                </a>
+                              </li>
+                              <li identifier="elected-members" class="dropdown-list-item">
+                                <a href="../../en/org/elected-members.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Membros eleitos #️⃣</div>
+                                </a>
+                              </li>
+                              <li identifier="constitution" class="dropdown-list-item">
+                                <a href="../../en/org/constitution.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Constituição 📜</div>
+                                </a>
+                              </li>
+                              <li identifier="globe-map" class="dropdown-list-item">
+                                <a href="../../en/org/globe-map.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Mapa do Globo 🌐</div>
+                                </a>
+                              </li>
+                              <li identifier="governance" class="dropdown-list-item">
+                                <a href="../../en/org/governance.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Governança 🏛️</div>
+                                </a>
+                              </li>
+                              <li identifier="community-guidelines" class="dropdown-list-item">
+                                <a href="../../en/org/community-guidelines.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Diretrizes da comunidade 🌿</div>
+                                </a>
+                              </li>
+                              <li identifier="privacy-policy" class="dropdown-list-item">
+                                <a href="../../en/org/privacy-policy.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Política de Privacidade 💠</div>
+                                </a>
+                              </li>
+                              <li identifier="terms-of-service" class="dropdown-list-item">
+                                <a href="../../en/org/terms-of-service.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Termos de Serviço 📑</div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>
+                      </div>
+                      <div data-hover="false" data-delay="0" progenitor="portfolio:team" parent="team" class="dropdown-wrapper-sidebar w-dropdown">
+                        <address class="pad-menu-on-hover w-dropdown-toggle">
+                          <div class="dropdown-icon-wrapper invert"><img src="../../images/group.png" loading="eager" sizes="(max-width: 991px) 22px, (max-width: 1439px) 2vw, (max-width: 1919px) 22px, 1vw" srcset="../../images/group-p-500.png 500w, ../../images/group.png 512w" alt="" class="_w-h-100"></div>
+                          <div class="text-block">Nosso time</div>
+                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
+                        </address>
+                        <nav class="dropdown-list-sidebar w-dropdown-list">
+                          <div>
+                            <ul role="list" class="list w-list-unstyled">
+                              <li identifier="zettahash-team" class="dropdown-list-item">
+                                <a href="../../en/team/zettahash-team.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Equipe Zettahash 🤝</div>
+                                </a>
+                              </li>
+                              <li identifier="zettahash-hashers" class="dropdown-list-item">
+                                <a href="../../en/team/zettahash-hashers.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Hashers #️⃣</div>
+                                </a>
+                              </li>
+                              <li identifier="community" class="dropdown-list-item">
+                                <a href="../../en/team/community.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM da Comunidade</div>
+                                </a>
+                              </li>
+                              <li identifier="development" class="dropdown-list-item">
+                                <a href="../../en/team/development.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM de Desenvolvimento</div>
+                                </a>
+                              </li>
+                              <li identifier="energy" class="dropdown-list-item">
+                                <a href="../../en/team/energy.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM de Energia</div>
+                                </a>
+                              </li>
+                              <li identifier="finance" class="dropdown-list-item">
+                                <a href="../../en/team/finance.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM de Finanças</div>
+                                </a>
+                              </li>
+                              <li identifier="mining" class="dropdown-list-item">
+                                <a href="../../en/team/mining.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM de Mineração</div>
+                                </a>
+                              </li>
+                              <li identifier="strategy" class="dropdown-list-item">
+                                <a href="../../en/team/strategy.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM de Estratégia</div>
+                                </a>
+                              </li>
+                              <li identifier="web3" class="dropdown-list-item">
+                                <a href="../../en/team/web3.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM of Web3</div>
+                                </a>
+                              </li>
+                              <li identifier="technology" class="dropdown-list-item">
+                                <a href="../../en/team/technology.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM de Tecnologia</div>
+                                </a>
+                              </li>
+                              <li identifier="legal" class="dropdown-list-item">
+                                <a href="../../en/team/legal.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM of Legal</div>
+                                </a>
+                              </li>
+                              <li identifier="marketing" class="dropdown-list-item">
+                                <a href="../../en/team/marketing.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link faux-nested">EM de Marketing</div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>
+                      </div>
+                      <div data-hover="false" data-delay="0" parent="black-paper" class="dropdown-wrapper-sidebar w-dropdown">
+                        <address class="pad-menu-on-hover w-dropdown-toggle">
+                          <div class="dropdown-icon-wrapper invert"><img src="../../images/book-open.svg" loading="eager" alt="" class="_w-h-100"></div>
+                          <div class="text-block">Papel Preto</div>
+                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
+                        </address>
+                        <nav class="dropdown-list-sidebar w-dropdown-list">
+                          <div>
+                            <ul role="list" class="list w-list-unstyled">
+                              <li identifier="zettahash-blackpaper" class="dropdown-list-item">
+                                <a href="../../en/black-paper/zettahash-blackpaper.html" aria-current="page" class="sidebar-dropdown-wrapper w-inline-block w--current">
+                                  <div class="sidebar-link">Papel Preto Original ⚫️</div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>
+                      </div>
+                      <div data-hover="false" data-delay="0" parent="faq" class="dropdown-wrapper-sidebar w-dropdown">
+                        <address class="pad-menu-on-hover w-dropdown-toggle">
+                          <div class="dropdown-icon-wrapper invert"><img src="../../images/help-circle.svg" loading="eager" alt="" class="_w-h-100"></div>
+                          <div class="text-block">Perguntas frequentes</div>
+                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
+                        </address>
+                        <nav class="dropdown-list-sidebar w-dropdown-list"></nav>
+                      </div>
+                      <div data-hover="false" data-delay="0" parent="brand-assets" class="dropdown-wrapper-sidebar w-dropdown">
+                        <address class="pad-menu-on-hover w-dropdown-toggle">
+                          <div class="dropdown-icon-wrapper invert"><img src="../../images/image.svg" loading="eager" alt="" class="_w-h-100"></div>
+                          <div class="text-block">Ativos da marca</div>
+                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
+                        </address>
+                        <nav class="dropdown-list-sidebar w-dropdown-list">
+                          <div>
+                            <ul role="list" class="list w-list-unstyled">
+                              <li identifier="zettahash-round-logo" class="dropdown-list-item">
+                                <a href="../../en/brand-assets/round-logo.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Logotipo redondo 🔵</div>
+                                </a>
+                              </li>
+                              <li identifier="zettahash-square-logo" class="dropdown-list-item">
+                                <a href="../../en/brand-assets/square-logo.html" class="sidebar-dropdown-wrapper w-inline-block">
+                                  <div class="sidebar-link">Logotipo Quadrado 🟦</div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="link-sidebar-wrapper none-border-bottom mbl-border-bot">
+                      <div data-hover="false" data-delay="0" class="dropdown-wrapper-sidebar w-dropdown">
+                        <div class="pad-menu-on-hover w-dropdown-toggle">
+                          <div class="flex-horizontal start">
+                            <div class="dropdown-icon-wrapper"><img src="../../images/translate.svg" loading="lazy" width="Auto" alt="" class="image-43"></div>
+                            <div class="language-short-code"></div>
+                            <div class="text-block language-string-name">Linguagem</div>
+                          </div>
+                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
+                        </div>
+                        <nav class="dropdown-list-sidebar w-dropdown-list">
+                          <div class="w-locales-list">
+                            <div role="list" class="w-locales-items">
+                              <div role="listitem" class="w-locales-item">
+                                <a hreflang="en-US" href="../../en/black-paper/zettahash-blackpaper.html" aria-current="page" class="sidebar-dropdown-wrapper text-block-10 locale-link-item">🇻🇬 Inglês</a>
+                              </div>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                      <a href="https://github.com/Zettahash/zettahash.webflow/issues/new" target="_blank" class="dropdown-wrapper-sidebar w-inline-block">
+                        <div class="pad-menu-on-hover">
+                          <div class="flex-horizontal start">
+                            <div class="dropdown-icon-wrapper"><img src="../../images/git.webp" loading="lazy" alt="" class="_w-h-100"></div>
+                          </div>
+                          <div>Editar Página</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-main-wrapper">
+        <section id="w-node-f29539fc-47b0-29bb-6d7c-0cf72e944248-ef5218a0" data-w-id="f29539fc-47b0-29bb-6d7c-0cf72e944248" class="section pd-top-0px pd-bottom-80px">
+          <div class="container-default">
+            <div class="inner-container _600px center">
+              <div>
+                <h1>Papel Preto Zettahash</h1><img src="../../images/6611652db28111cd7b7d3504_zettahash-banner.webp" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 991px) 94vw, (max-width: 1439px) 72vw, 780px" srcset="../../images/6611652db28111cd7b7d3504_zettahash-banner-p-500.webp 500w, ../../images/6611652db28111cd7b7d3504_zettahash-banner-p-800.webp 800w, ../../images/6611652db28111cd7b7d3504_zettahash-banner.webp 1000w" alt="graphic depicting 3 silhouette zettahash logos">
+                <div class="rich-text-block w-richtext">
+                  <h5>Autor Original: <strong>#Raphael</strong> 31 de outubro de 2022</h5>
+                  <p>‍</p>
+                  <h2>Visão geral</h2>
+                  <h3><strong>Abstract</strong></h3>
+                  <p>Zettahash propõe uma Organização Autônoma Descentralizada (DAO) de código aberto e controlada pelo público para a indústria de mineração de Bitcoin, aproveitando os recursos da infraestrutura Web3. Esta iniciativa marca uma mudança significativa em relação às estruturas corporativas tradicionais, ao adotar um símbolo de governação descentralizada. Um token digital livre de controle centralizado, limites e barreiras. Uma partilha aberta para que todos possam participar e contribuir, globalmente. Uma entidade caracterizada pela transparência e integridade, demonstrando responsabilidade fiscal. Um DAO que não direciona suas receitas para poucos centralizados e privilegiados, evitando a imposição de altos salários, bônus injustificados ou outro tratamento preferencial e remuneração para executivos, diretores executivos ou outros acionistas controlados majoritariamente.</p>
+                  <p>Em vez disso, recompensa coletivamente seus detentores de tokens descentralizados, aumentando o valor do token, fornecendo prova verificável da receita gerada pela mineração de Bitcoin e vários outros empreendimentos. Este documento abrangente investiga os aspectos intrincados da estrutura estrutural do token, mecanismos deflacionários, estratégias de alocação, as complexidades das operações descentralizadas de mineração de Bitcoin, a estrutura de governança e participação de empresas públicas e uma dedicação inabalável à promoção descentralizada equilibrada, autêntica e transparente. práticas de mineração.</p>
+                  <h3><strong>Introduction</strong></h3>
+                  <p>Desde a sua criação, o ambiente de mineração de Bitcoin passou por mudanças substanciais, marcadas por uma tendência distinta à centralização ou ao monopólio liderado por empresas públicas e privadas proeminentes. Embora estas entidades tenham desempenhado um papel crucial no reforço da adopção, força, crescimento e visibilidade da rede, um resultado não intencional foi uma oportunidade reduzida para o indivíduo médio se envolver no processo de mineração, resultando numa consolidação de poder e influência. As tradicionais barreiras à entrada, muitas vezes associadas a métodos de investimento financeiro, tais como ações negociadas publicamente em Wall Street ou financiamento privado organizado por instituições privadas, exacerbaram ainda mais esta divisão. Como resposta a estes desafios, a Zettahash surgiu como uma solução inovadora, preparada para colmatar a lacuna entre as organizações centralizadas e descentralizadas de mineração de Bitcoin através da força combinada de um grupo global maior e do seu envolvimento com o mercado de tokens digitais.</p>
+                  <p>O objetivo fundamental da Zettahash é restaurar o equilíbrio e a inclusão na indústria de mineração de Bitcoin, amplificando a essência democratizada e sem confiança do Bitcoin. Zettahash prevê um futuro onde o envolvimento na mineração de Bitcoin vai além de alguns privilegiados, tornando-se acessível a um grupo diversificado de participantes e contribuidores. Esta visão visa promover a liberdade e estabelecer uma rede descentralizada mais equitativa e responsável.</p>
+                  <p>‍</p>
+                  <h2><strong>Executive Summary</strong></h2>
+                  <h3><strong>The Problem Statement</strong></h3>
+                  <p>Nos últimos anos, surgiram desenvolvimentos no setor de mineração de Bitcoin, caracterizado por uma consolidação significativa do controle da taxa de hash entre um grupo cada vez menor de indivíduos, empresas influentes e pools de mineração. Isto pode afastar-se do conceito central de descentralização, um princípio fundamental na filosofia do Bitcoin, e apresenta desafios potenciais.</p>
+                  <p>Esta centralização crescente também levanta preocupações mais amplas, incluindo o risco de oscilação da indústria e o surgimento de tendências monopolistas. É crucial enfatizar que a força do Bitcoin reside no seu sistema confiável, onde os mineradores desempenham um papel fundamental para manter a integridade da rede. A responsabilidade dos mineiros de defender esta natureza sem confiança é crucial para preservar os princípios fundamentais sobre os quais o Bitcoin foi fundado.</p>
+                  <h3><strong>The Solution Statement</strong></h3>
+                  <p>A plataforma Zettahash apresenta uma infinidade de vantagens tanto para os indivíduos quanto para a rede Bitcoin mais ampla. Ao capacitar os indivíduos, Zettahash fornece um caminho para defender a mineração descentralizada de Bitcoin sem a necessidade de adquirir e gerenciar hardware de mineração pessoal, promovendo assim a inclusão e a acessibilidade a um público mais amplo.</p>
+                  <p>Zettahash funciona como um catalisador para a descentralização do processo de mineração. Ao simplificar a entrada na mineração para indivíduos, a Zettahash desafia ativamente a concentração predominante da taxa de hash entre alguns dos principais players selecionados. Como parte do nosso compromisso com a descentralização genuína, defendemos a adopção de estruturas de governação descentralizadas, tais como DAOs, dentro da indústria. Este esforço coletivo aumenta a segurança e a resiliência da rede Bitcoin, fortalecendo-a contra potenciais ataques e promovendo um ecossistema mais democrático e inclusivo.</p>
+                  <p>Além disso, a Zettahash está na vanguarda do desafio às normas da indústria, incentivando as empresas a adotar modelos de governança descentralizados, como DAOs (Organizações Autônomas Descentralizadas). Esta abordagem alinha-se com a visão mais ampla da verdadeira descentralização, ultrapassando as fronteiras tradicionais do controlo centralizado.</p>
+                  <p>‍</p>
+                  <h2><strong>The Zettahash Organization</strong></h2>
+                  <h3>A Missão Zettahash</h3>
+                  <p>A missão da Zettahash é estabelecer uma organização controlada pelo público que seja moldada e impulsionada pelo poder coletivo dos membros e participantes da sua comunidade. Cada decisão tomada, cada acção tomada e cada esforço empreendido é guiado pelo princípio de beneficiar o público e a rede. Zettahash se dedica a criar um ecossistema onde os interesses da comunidade se alinhem com o sucesso do Zettahash, promovendo um relacionamento complementar entre os titulares do Zettahash e os membros eleitos da organização. Zettahash visa capacitar indivíduos para assumirem a propriedade de uma organização apoiada pela mineração de Bitcoin.</p>
+                  <h3>A Visão Zettahash</h3>
+                  <p>A Zettahash está comprometida em ser uma entidade transparente e honesta que não premia a si mesma, aos executivos ou aos membros gestores com lucros gerados, salários injustificáveis, bônus e outras vantagens. Em vez disso, a Zettahash recompensa seus detentores de tokens aumentando o valor do token com a receita gerada por meio da mineração de Bitcoin e outros empreendimentos. Vemos o Zettahash como uma nova fronteira para empresas de capital aberto em todo o mundo, aumentando a transparência, a equidade e a responsabilização.</p>
+                  <p>‍</p>
+                  <h2><strong>Empowering Community through Consensus</strong></h2>
+                  <p>No espírito dos princípios democráticos, o Fórum de Consenso da Comunidade Zettahash surge como uma plataforma onde a voz de cada participante ressoa. Com base num processo democrático, o fórum emprega um mecanismo de votação positiva que concede aos membros da comunidade o poder de elevar tópicos importantes. Esta secção esclarece como este quadro democrático, juntamente com a atenção vigilante da equipa Zettahash, permite a tomada de decisões orientada pela comunidade.</p>
+                  <h3><strong>Community Forum Mechanics</strong></h3>
+                  <p>Demonstrando a nossa dedicação em promover uma comunidade inclusiva e dinâmica, estabelecemos um requisito de participação simples. Para fazer parte de nossa plataforma, basta conectar sua conta Zettahash (ZH) a uma carteira web3 que pode verificar sua propriedade do token ZH. Esta etapa de verificação é crucial para confirmar o status dos nossos participantes como titulares genuínos de Zettahash.</p>
+                  <p>Nossa plataforma foi projetada para ser inclusiva e acreditamos no poder das discussões abertas. Qualquer titular (ZH) é bem-vindo para gerar postagens e tópicos, permitindo que cada membro de nossa comunidade tenha voz. Todas as postagens e tópicos serão monitorados pelos membros eleitos para obter insights sobre os interesses da comunidade e os principais pontos de discussão.</p>
+                  <h3><strong>Community-Driven Governance</strong></h3>
+                  <p>Aproveitar ferramentas de integração de código aberto como Snapshot.org, uma plataforma adaptada para agilizar a governança descentralizada para Organizações Autônomas Descentralizadas (DAOs). Essa interface permite que os membros da comunidade se envolvam ativamente na tomada de decisões, eliminando a necessidade de conhecimentos técnicos aprofundados.</p>
+                  <ul role="list">
+                    <li>Gerenciamento de propostas: permite que qualquer membro da comunidade crie propostas cobrindo uma ampla gama de tópicos, desde atualizações de protocolo até solicitações de financiamento.</li>
+                    <li>Processo de votação:<br>Os usuários com poder de voto participam de um processo de votação sem gás durante um período determinado, expressando suas preferências usando tokens nativos.</li>
+                  </ul>
+                  <ul role="list">
+                    <li>Consenso e Quorum:<br>Os DAOs podem definir critérios mínimos de participação (quórum) e percentual de aprovação para que as propostas sejam aprovadas, garantindo amplo envolvimento da comunidade.</li>
+                  </ul>
+                  <ul role="list">
+                    <li>Solução da Camada 2:<br>Operando como uma solução de camada 2 em blockchains existentes para minimizar custos e congestionamentos, armazenando dados de votação fora da cadeia.</li>
+                  </ul>
+                  <ul role="list">
+                    <li>Mecanismo de votação sem gás:<br>Empregue um mecanismo sem gás, permitindo que os usuários assinem mensagens com suas carteiras para votar sem incorrer em taxas de transação.</li>
+                  </ul>
+                  <ul role="list">
+                    <li>Execução das Propostas Aprovadas:<br>Depois que uma proposta garante o quórum e a aprovação necessários, os contratos inteligentes são acionados para executar as ações propostas automaticamente.</li>
+                  </ul>
+                  <ul role="list">
+                    <li>Transparência e Auditoria:<br>Todos os dados da votação são registrados no blockchain, proporcionando transparência e auditabilidade, cruciais para a verificação do resultado de cada proposta.</li>
+                  </ul>
+                  <ul role="list">
+                    <li>Interface amigável:<br>Um design que dá prioridade à facilidade de utilização, permitindo que os membros da comunidade se envolvam numa governação descentralizada sem exigir conhecimentos técnicos extensos ou incorrer em elevados custos de transação.</li>
+                  </ul>
+                  <p>‍</p>
+                  <h2><strong>Transparent Accountability</strong></h2>
+                  <h3><strong>Treasury &amp; Multisig</strong></h3>
+                  <p>Carteiras com múltiplas assinaturas (carteira multisig) são um tipo de carteira do tesouro que requer múltiplas chaves privadas para autorizar uma transação. Este conceito é frequentemente empregado em organizações autônomas descentralizadas (DAOs) para aumentar a segurança e a descentralização.</p>
+                  <h3><strong>Multi-Signature Wallet in a DAO:</strong></h3>
+                  <ol start="" role="list">
+                    <li>Criação de Carteira:<br>- Uma carteira com múltiplas assinaturas é configurada com um número predefinido de assinaturas necessárias (assinantes ou chaves) para aprovar uma transação.<br>- Por exemplo, uma carteira multisig 3 de 5 exige que três dos cinco membros eleitos assinem qualquer transação para que ela seja válida.</li>
+                    <li>Membros eleitos:<br>- No contexto de um DAO, os membros são frequentemente eleitos para representar a comunidade ou as partes interessadas.<br>- Esses membros eleitos recebem chaves privadas ou acesso ao seu próprio conjunto exclusivo de chaves privadas associadas à carteira multisig.</li>
+                    <li>Autorização de transação:<br>- Quando uma transação é iniciada, ela precisa ser assinada pelo número necessário de membros.<br>- Num cenário 3 de 5, por exemplo, três membros eleitos teriam que assinar a transação para que ela fosse executada.</li>
+                    <li>Segurança melhorada:<br>- A configuração multisig aumenta a segurança porque o comprometimento ou atividade maliciosa por parte de um único indivíduo não é suficiente para executar uma transação.<br>- Distribui a responsabilidade entre múltiplas partes, reduzindo o risco de acesso não autorizado.</li>
+                  </ol>
+                  <h3><strong>Relationship to a Democratic Elected Congress:</strong></h3>
+                  <p>O conceito de uma carteira multisig com membros eleitos em um DAO tem semelhanças com a estrutura de governança de um congresso eleito democrático:</p>
+                  <ol start="" role="list">
+                    <li>Representação:<br>- Os membros eleitos em ambos os cenários representam os interesses da comunidade.<br>- Num congresso democrático eleito, os representantes são escolhidos através de um processo de votação. Num DAO, os titulares de ZH podem votar em representantes.</li>
+                    <li>Tomando uma decisão:<br>- Ambos os sistemas envolvem um processo de tomada de decisão em que um determinado número de membros eleitos deve chegar a acordo sobre uma proposta ou decisão.<br>- Num congresso democrático, pode ser necessária uma votação maioritária para aprovar legislação. Em uma carteira multisig, é necessária a maioria dos signatários para a aprovação da transação.</li>
+                    <li>Pesos e contrapesos:<br>- A configuração multisig, como um sistema democrático, introduz freios e contrapesos. Nenhum indivíduo ou um pequeno grupo pode tomar decisões unilateralmente sem o acordo do órgão eleito mais amplo que, neste caso, o Zettahash DAO.</li>
+                    <li>Governança Transparente:<br>- Ambos os sistemas visam proporcionar uma governação transparente, onde as decisões são tomadas abertamente e a comunidade tem plena visão do processo de tomada de decisão.</li>
+                  </ol>
+                  <h3><strong>Allocation of Funds</strong></h3>
+                  <h4><strong>Capital Allocation and Commitments</strong></h4>
+                  <p>As contribuições serão alocadas exclusivamente para despesas de capital (CapEx) e despesas operacionais (OpEx) relacionadas às operações de mineração de Bitcoin da fundação. O CapEx cobrirá despesas, por exemplo: compras de máquinas de mineração digital Bitcoin, infraestrutura, aquisição de equipamentos, etc. OpEx inclui contratos de hospedagem, salários da equipe de operação, custos de eletricidade e outras necessidades operacionais. Os lucros líquidos da mineração de Bitcoin são reinvestidos adquirindo ações da Zettahash diretamente do mercado global a preços de mercado vigentes (recompra de participação de mercado) ou alocando esses fundos para apoiar a expansão contínua das operações de mineração e outros empreendimentos. O DAO decide qual melhor curso de ação deve ser tomado.</p>
+                  <h4><strong>Asset Ownership and Financial Transparency</strong></h4>
+                  <p>A Zettahash está totalmente comprometida em manter um grau excepcional de transparência na divulgação de sua extensa gama de ativos. Isto inclui uma divulgação completa de todos os ativos pertencentes à organização; finanças totalmente auditáveis disponíveis ao público.</p>
+                  <h4><strong>Wallet Addresses and Financial Assets</strong></h4>
+                  <p>Como parte integrante do nosso compromisso com a transparência, revelaremos publicamente os endereços das carteiras vinculadas à mineração e às participações de Bitcoin e outros ativos criptográficos proeminentes, como, por exemplo, mas não limitado a, “stablecoins”. Além disso, esta transparência estender-se-á aos extratos bancários, oferecendo uma visão limitada mas esclarecedora das nossas participações fiduciárias, juntamente com informações sobre a nossa carteira diversificada envolvendo diferentes moedas e participações imobiliárias.</p>
+                  <h4><strong>Tangible Assets and Expansion</strong></h4>
+                  <p>Os ativos integrantes das nossas operações vão além do ecossistema digital. Temos orgulho de mostrar nossa propriedade de máquinas de mineração digital, equipamentos, infraestrutura e participações imobiliárias que contribuem para a vitalidade geral e expansão da Zettahash.</p>
+                  <h4><strong>Financial Accountability</strong></h4>
+                  <p>Em linha com a nossa dedicação à transparência, a Zettahash tomará medidas proativas para compartilhar dados em tempo real de forma responsável. Inicialmente, isto será facilitado através da participação num pool de mineração público ou privado, garantindo aos participantes interessados acesso a um desempenho financeiro autêntico e oportuno.</p>
+                  <p>‍</p>
+                  <h2><strong>Reference and Inspiration:</strong></h2>
+                  <p>-<strong>Satoshi Nakamoto</strong>, the pseudonymous creator of Bitcoin, outlined his motivations and intentions in the original Bitcoin whitepaper titled "<a href="https://bitcoin.org/bitcoin.pdf" target="_blank">Bitcoin: um sistema de dinheiro eletrônico ponto a ponto</a>,“- published October 31, 2008. While we cannot definitively know Satoshi's true intentions, the whitepaper provides insights into the goals and purposes behind the creation of Bitcoin.</p>
+                  <p><strong>1. Decentralization and Peer-to-Peer Transactions: </strong>Satoshi aimed to create a decentralized digital currency system that would allow individuals to conduct peer-to-peer transactions without the need for intermediaries like banks or financial institutions. This would enable direct transfer of value between parties, reducing the need for trust in third parties.</p>
+                  <p><strong>2. Eliminating Double Spending: </strong>One of the key challenges in digital currency systems was the potential for double spending—spending the same digital token more than once. Satoshi proposed a solution using a decentralized consensus mechanism, known as proof-of-work, to prevent double spending and ensure the integrity of transactions.</p>
+                  <p><strong>3. Openness and Transparency: </strong>Bitcoin's design emphasized transparency through a public ledger called the blockchain. Every transaction is recorded on the blockchain, providing an open and verifiable history of all transactions.</p>
+                  <p><strong>4. Limited Supply:</strong> Bitcoin was designed with a capped supply of 21 million coins to prevent inflation and maintain scarcity, similar to precious metals like gold. This scarcity was intended to ensure that the value of Bitcoin would not be easily diluted over time.</p>
+                  <p><strong>5. Financial Inclusion:</strong> Satoshi's vision included providing access to financial services for people who are unbanked or underbanked, allowing them to participate in the global economy and have more control over their own finances.</p>
+                  <p><strong>6. Censorship Resistance:</strong> By operating on a decentralized network, Bitcoin was intended to resist censorship and control by any single entity or government. Transactions could not be easily blocked or controlled, giving users greater financial freedom.</p>
+                  <p><strong>7. Security and Anonymity:</strong> While Bitcoin transactions are recorded on a public ledger, they can be conducted pseudonymously. This provides a certain level of privacy and security for users, especially compared to traditional financial systems.</p>
+                  <p>‍</p>
+                  <p>It's important to note that while these were the stated goals and purposes outlined by <strong>Satoshi Nakamoto</strong>, Bitcoin's evolution and use cases have expanded beyond these initial intentions. Over time, Bitcoin has become a store of value, a speculative investment, and a subject of technological innovation. Different individuals and groups have interpreted and used Bitcoin in various ways, leading to a diverse range of opinions about its purpose and potential.</p>
+                  <p><strong><br>—</strong>“Safeguarding the integrity and decentralization of Bitcoin begins by promoting the decentralization of Bitcoin mining companies."<strong> - #Raphael</strong></p>
+                  <p>‍</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="w-layout-hflex container footer-container">
+      <div class="footer"><img sizes="100vw" srcset="../../images/blur3-p-500.webp 500w, ../../images/blur3.webp 800w" alt="" src="../../images/blur3.webp" loading="lazy" class="blur-footer subtle">
+        <div class="w-layout-vflex company-information">
+          <div class="w-layout-vflex company-name-tagline-container">
+            <div class="zh-logo-2"><img src="../../images/zettahash-webflow.svg" loading="lazy" alt="" class="zettahash-iconography"></div>
+            <div>Estamos devolvendo a mineração de bitcoin ao povo!</div>
+          </div>
+          <div class="w-layout-hflex zettahash-company-address-and-flag-container"><img src="../../images/Flag_of_the_Marshall_Islands.svg.png" loading="lazy" width="Auto" sizes="100vw" alt="Flag of the Marshall Islands
+" srcset="../../images/Flag_of_the_Marshall_Islands.svg-p-500.png 500w, ../../images/Flag_of_the_Marshall_Islands.svg-p-800.png 800w, ../../images/Flag_of_the_Marshall_Islands.svg-p-1080.png 1080w, ../../images/Flag_of_the_Marshall_Islands.svg.png 1200w" class="mi-flag-2">
+            <div class="w-layout-vflex">
+              <h4 class="cosy">Zettahash DAO LLC</h4>
+              <div>Caixa Postal 852, Long Island Rd<br>Majuro, Ilhas Marshall MH 96960</div>
+            </div>
+          </div>
+          <div class="w-layout-hflex zettahash-company-address-and-flag-container"><img src="../../images/Flag_of_the_British_Virgin_Islands.svg_1.webp" loading="lazy" width="Auto" sizes="100vw" alt="" srcset="../../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 500w, ../../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 800w, ../../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 1080w, ../../images/Flag_of_the_British_Virgin_Islands.svg_1.webp 1200w" class="mi-flag-2">
+            <div class="w-layout-vflex">
+              <h4 class="cosy">ZH LIMITED</h4>
+              <div>3º andar, Edifício Yamraj, Praça do Mercado <br>PO Caixa 3175 Road Town, Tortola VG1110</div>
+            </div>
+          </div>
+          <div class="w-layout-vflex company-name-tagline-container">
+            <a href="https://flat18.co.uk" target="_blank" class="link-2">Energizado pelo Flat 18⚡</a>
+          </div>
+        </div>
+        <div class="w-layout-hflex links-organiser">
+          <div class="w-layout-vflex footer-link-section">
+            <h4 class="links-organiser-heading">Ligações</h4>
+            <ul role="list" class="foolter-link-list w-list-unstyled">
+              <li class="foolter-link-list-item">
+                <a href="https://discord.gg/BcK7NaA5" target="_blank" class="footer-link-2">Consenso</a>
+                <a href="https://hashboard.zettahash.org" target="_blank" class="footer-link-2">#Hashboard</a>
+                <a href="../../become-a-hasher.html" class="footer-link-2">Contribuir</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-layout-vflex footer-link-section">
+            <h4 class="links-organiser-heading">Apoiar</h4>
+            <ul role="list" class="foolter-link-list w-list-unstyled">
+              <li class="foolter-link-list-item">
+                <a href="https://github.com/Zettahash/bugs/issues/new" class="footer-link-2">Reportar um erro</a>
+                <a href="https://stats.uptimerobot.com/yGonKu6AE6" class="footer-link-2">Status do serviço</a>
+                <a href="https://gopluslabs.io/token-security/1/0xb630d7388e3466af4952b6e5d8db63d828140e5d" target="_blank" class="footer-link-2">Segurança de token</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-layout-vflex footer-link-section">
+            <h4 class="links-organiser-heading">Organização</h4>
+            <ul role="list" class="foolter-link-list w-list-unstyled">
+              <li class="foolter-link-list-item">
+                <a href="../../en/org/globe-map.html" class="footer-link-2">Mapa Globo</a>
+                <a href="../../en/black-paper/zettahash-blackpaper.html" aria-current="page" class="footer-link-2 w--current">Papel Preto</a>
+                <a href="../../en/org/terms-of-service.html" class="footer-link-2">Termos de serviço</a>
+                <a href="../../en/org/privacy-policy.html" class="footer-link-2">política de Privacidade</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-layout-vflex footer-link-section">
+            <h4 class="links-organiser-heading">Entrar em contato</h4>
+            <ul role="list" class="foolter-link-list w-list-unstyled">
+              <li class="foolter-link-list-item">
+                <a href="https://github.com/Zettahash" target="_blank" class="footer-link-2">GitHub</a>
+                <a href="https://t.me/+16S5euQ4PQFiMzNk" target="_blank" class="footer-link-2">Telegrama</a>
+                <a href="mailto:dao@zettahash.org" class="footer-link-2">E-mail</a>
+                <a href="https://twitter.com/zettahash_org" target="_blank" class="footer-link-2">X (Twitter)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=664de4f406f296cc175c3570" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../../js/webflow.js" type="text/javascript"></script>
+  <script src="https://cdn.zettahash.org/js/zettahash.org.js"></script>
+  <style>
+iframe.iframe-embed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-image: url(https://uploads-ssl.webflow.com/65d4f59afabe990d05bd8b5f/65d53d1b579afd8381790d33_spinner-animated.svg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.w-richtext figure img {
+    border-radius: 10px;
+}
+</style>
+
+</body></html>
