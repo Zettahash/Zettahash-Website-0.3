@@ -68,10 +68,12 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        id: deployment
+        uses: actions/deploy-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages # Ensure this branch matches your GitHub Pages settings
-          user_name: github-actions[bot]
-          user_email: github-actions[bot]@users.noreply.github.com
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: ./dist
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
