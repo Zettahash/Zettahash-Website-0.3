@@ -31,6 +31,7 @@ jobs:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
         run: |
           echo "$GOOGLE_CREDENTIALS" > $HOME/gcloud-key.json
+          cat $HOME/gcloud-key.json # Add this line to print the contents for debugging
 
       - name: Set GOOGLE_APPLICATION_CREDENTIALS
         run: echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcloud-key.json" >> $GITHUB_ENV
@@ -46,4 +47,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-
