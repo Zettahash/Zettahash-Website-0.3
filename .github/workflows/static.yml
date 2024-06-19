@@ -20,12 +20,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3 # Update to v3
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3 # Update to v3
+        uses: actions/setup-node@v3
         with:
-          node-version: '20' # Ensure Node.js 20 is used
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
@@ -43,8 +43,17 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: List dist directory contents for debugging
+        run: ls -R ./dist
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4 # Update to v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          destination_dir: . # Ensure we're using the correct destination
+          keep_files: false  # Optional: adjust based on your needs
+          commit_message: "Deploy to GitHub Pages"
+
+      - name: Verify deployment status
+        run: curl -I https://zettahash.github.io/zettahash-website-0.3/
