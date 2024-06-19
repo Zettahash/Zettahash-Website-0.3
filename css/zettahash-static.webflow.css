@@ -5110,6 +5110,8 @@ figcaption {
   grid-row-gap: 10px;
   box-shadow: none;
   border: 1px #000;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
