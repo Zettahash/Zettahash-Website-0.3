@@ -1,484 +1,0 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jun 19 2024 03:25:02 GMT+0000 (Coordinated Universal Time)  --><html data-wf-page="666b934d416e391def5218a0" data-wf-site="664de4f406f296cc175c3570"><head>
-  <meta charset="utf-8">
-  <title>Zettahash Blackpaper</title>
-  <meta content="Zettahash Blackpaper" property="og:title">
-  <meta content="Zettahash Blackpaper" property="twitter:title">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
-  <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="../../css/zettahash-static.webflow.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:regular,500,600,700","Source Code Pro:regular,500","Hanken Grotesk:200,regular,600,800,900,200italic,italic,600italic,800italic,900italic"]  }});</script>
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="../../images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="../../images/webclip.png" rel="apple-touch-icon">
-  <link href="https://zettahash.org/en/black-paper/zettahash-blackpaper" rel="canonical">
-  <script defer="" src="https://analytics.eu.umami.is/script.js" data-website-id="fee5d3c6-3368-43f4-8dd4-377e68f70b4f"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.zettahash.org/css/zettahash.org.css">
-</head>
-<body>
-  <div class="page-wrapper">
-    <div class="w-layout-grid grid-2-columns header-siderbar-grid">
-      <div id="w-node-_53d28380-ec9d-4355-a8b3-10dbbfdecc90-bfdecc90" class="navigation-sidebar">
-        <div class="body-modifier w-embed w-script">
-          <script>
-const rtlLocales = ['ar']
-  for(const rtl of rtlLocales){
-    if(window.location.pathname.indexOf(`/${rtl}`)==0){
-		document.body.classList.add("rtl")
-    }
-  }
-</script>
-        </div>
-        <div class="sticky-top header-wrapper---main">
-          <div data-animation="over-left" class="sidebar-wrapper w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="64d4f0a2-1c35-aa35-3617-28f5770b3376" role="banner" data-duration="400" data-doc-height="1">
-            <div data-w-id="201a6539-5861-eb21-cd43-ef78f43feaef" class="content-sidebar">
-              <div class="sidebar-logo-section-container">
-                <div class="div-block-11">
-                  <a href="../../index.html" class="link-block zh-svg-logo w-inline-block"><img src="../../images/zettahash-webflow.svg" loading="lazy" width="150" alt="" class="zh-logo"></a>
-                </div>
-                <div class="hamburger-menu-wrapper header-btn w-nav-button">
-                  <div class="sidebar-collapse-icon-inner-container">
-                    <div class="hamburger-menu-bar top"></div>
-                    <div class="hamburger-menu-bar bottom"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="mg-bottom-8px header-search-bar">
-                <form action="/search" class="mg-bottom-0 width-100 w-form">
-                  <div class="position-relative"><input class="input small search-icon-inside w-input" maxlength="256" name="query" placeholder="Search docs..." type="search" id="search" required="">
-                    <div class="line-rounded-icon search-input default"></div>
-                  </div><input type="submit" class="hidden-desktop w-button" value="Search">
-                </form>
-              </div>
-              <div class="sidebar-nav-menu-wrapper">
-                <div class="sidebar-nav-menu">
-                  <div>
-                    <div class="link-sidebar-wrapper none-border-top first">
-                      <div data-hover="false" data-delay="0" parent="org" class="dropdown-wrapper-sidebar w-dropdown">
-                        <address class="pad-menu-on-hover w-dropdown-toggle">
-                          <div class="dropdown-icon-wrapper invert"><img src="../../images/layers.svg" loading="eager" alt="" class="_w-h-100"></div>
-                          <div class="text-block">منظمة</div>
-                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
-                        </address>
-                        <nav class="dropdown-list-sidebar w-dropdown-list">
-                          <div>
-                            <ul role="list" class="list w-list-unstyled">
-                              <li identifier="manifesto" class="dropdown-list-item">
-                                <a href="../../ar/org/manifesto.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">بيان 🪧</div>
-                                </a>
-                              </li>
-                              <li identifier="treasury-management" class="dropdown-list-item">
-                                <a href="../../ar/org/treasury-management.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">إدارة الخزينة 🪙</div>
-                                </a>
-                              </li>
-                              <li identifier="elected-members" class="dropdown-list-item">
-                                <a href="../../ar/org/elected-members.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">الأعضاء المنتخبين #️⃣</div>
-                                </a>
-                              </li>
-                              <li identifier="constitution" class="dropdown-list-item">
-                                <a href="../../ar/org/constitution.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">الدستور 📜</div>
-                                </a>
-                              </li>
-                              <li identifier="globe-map" class="dropdown-list-item">
-                                <a href="../../ar/org/globe-map.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">خريطة الكرة الأرضية 🌐</div>
-                                </a>
-                              </li>
-                              <li identifier="governance" class="dropdown-list-item">
-                                <a href="../../ar/org/governance.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">الحكم 🏛️</div>
-                                </a>
-                              </li>
-                              <li identifier="community-guidelines" class="dropdown-list-item">
-                                <a href="../../ar/org/community-guidelines.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">إرشادات المجتمع 🌿</div>
-                                </a>
-                              </li>
-                              <li identifier="privacy-policy" class="dropdown-list-item">
-                                <a href="../../ar/org/privacy-policy.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">سياسة الخصوصية 💠</div>
-                                </a>
-                              </li>
-                              <li identifier="terms-of-service" class="dropdown-list-item">
-                                <a href="../../ar/org/terms-of-service.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">شروط الخدمة 📑</div>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </nav>
-                      </div>
-                      <div data-hover="false" data-delay="0" progenitor="portfolio:team" parent="team" class="dropdown-wrapper-sidebar w-dropdown">
-                        <address class="pad-menu-on-hover w-dropdown-toggle">
-                          <div class="dropdown-icon-wrapper invert"><img src="../../images/group.png" loading="eager" sizes="(max-width: 991px) 22px, (max-width: 1439px) 2vw, (max-width: 1919px) 22px, 1vw" srcset="../../images/group-p-500.png 500w, ../../images/group.png 512w" alt="" class="_w-h-100"></div>
-                          <div class="text-block">فريقنا</div>
-                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
-                        </address>
-                        <nav class="dropdown-list-sidebar w-dropdown-list">
-                          <div>
-                            <ul role="list" class="list w-list-unstyled">
-                              <li identifier="zettahash-team" class="dropdown-list-item">
-                                <a href="../../ar/team/zettahash-team.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">فريق زيتهاش 🤝</div>
-                                </a>
-                              </li>
-                              <li identifier="zettahash-hashers" class="dropdown-list-item">
-                                <a href="../../ar/team/zettahash-hashers.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">هاشر #️⃣</div>
-                                </a>
-                              </li>
-                              <li identifier="community" class="dropdown-list-item">
-                                <a href="../../ar/team/community.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">م من المجتمع</div>
-                                </a>
-                              </li>
-                              <li identifier="development" class="dropdown-list-item">
-                                <a href="../../ar/team/development.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">م للتنمية</div>
-                                </a>
-                              </li>
-                              <li identifier="energy" class="dropdown-list-item">
-                                <a href="../../ar/team/energy.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">م للطاقة</div>
-                                </a>
-                              </li>
-                              <li identifier="finance" class="dropdown-list-item">
-                                <a href="../../ar/team/finance.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">م المالية</div>
-                                </a>
-                              </li>
-                              <li identifier="mining" class="dropdown-list-item">
-                                <a href="../../ar/team/mining.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">م للتعدين</div>
-                                </a>
-                              </li>
-                              <li identifier="strategy" class="dropdown-list-item">
-                                <a href="../../ar/team/strategy.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">إم للاستراتيجية</div>
-                                </a>
-                              </li>
-                              <li identifier="web3" class="dropdown-list-item">
-                                <a href="../../ar/team/web3.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">إم من Web3</div>
-                                </a>
-                              </li>
-                              <li identifier="technology" class="dropdown-list-item">
-                                <a href="../../ar/team/technology.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">إم للتكنولوجيا</div>
-                                </a>
-                              </li>
-                              <li identifier="legal" class="dropdown-list-item">
-                                <a href="../../ar/team/legal.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">م القانونية</div>
-                                </a>
-                              </li>
-                              <li identifier="marketing" class="dropdown-list-item">
-                                <a href="../../ar/team/marketing.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link faux-nested">م للتسويق</div>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </nav>
-                      </div>
-                      <div data-hover="false" data-delay="0" parent="black-paper" class="dropdown-wrapper-sidebar w-dropdown">
-                        <address class="pad-menu-on-hover w-dropdown-toggle">
-                          <div class="dropdown-icon-wrapper invert"><img src="../../images/book-open.svg" loading="eager" alt="" class="_w-h-100"></div>
-                          <div class="text-block">ورقة سوداء</div>
-                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
-                        </address>
-                        <nav class="dropdown-list-sidebar w-dropdown-list">
-                          <div>
-                            <ul role="list" class="list w-list-unstyled">
-                              <li identifier="zettahash-blackpaper" class="dropdown-list-item">
-                                <a href="../../ar/black-paper/zettahash-blackpaper.html" aria-current="page" class="sidebar-dropdown-wrapper w-inline-block w--current">
-                                  <div class="sidebar-link">ورق أسود أصلي ⚫️</div>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </nav>
-                      </div>
-                      <div data-hover="false" data-delay="0" parent="faq" class="dropdown-wrapper-sidebar w-dropdown">
-                        <address class="pad-menu-on-hover w-dropdown-toggle">
-                          <div class="dropdown-icon-wrapper invert"><img src="../../images/help-circle.svg" loading="eager" alt="" class="_w-h-100"></div>
-                          <div class="text-block">الأسئلة الشائعة</div>
-                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
-                        </address>
-                        <nav class="dropdown-list-sidebar w-dropdown-list"></nav>
-                      </div>
-                      <div data-hover="false" data-delay="0" parent="brand-assets" class="dropdown-wrapper-sidebar w-dropdown">
-                        <address class="pad-menu-on-hover w-dropdown-toggle">
-                          <div class="dropdown-icon-wrapper invert"><img src="../../images/image.svg" loading="eager" alt="" class="_w-h-100"></div>
-                          <div class="text-block">أصول العلامة التجارية</div>
-                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
-                        </address>
-                        <nav class="dropdown-list-sidebar w-dropdown-list">
-                          <div>
-                            <ul role="list" class="list w-list-unstyled">
-                              <li identifier="zettahash-round-logo" class="dropdown-list-item">
-                                <a href="../../ar/brand-assets/round-logo.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">شعار دائري 🔵</div>
-                                </a>
-                              </li>
-                              <li identifier="zettahash-square-logo" class="dropdown-list-item">
-                                <a href="../../ar/brand-assets/square-logo.html" class="sidebar-dropdown-wrapper w-inline-block">
-                                  <div class="sidebar-link">الشعار المربع 🟦</div>
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </nav>
-                      </div>
-                    </div>
-                    <div class="link-sidebar-wrapper none-border-bottom mbl-border-bot">
-                      <div data-hover="false" data-delay="0" class="dropdown-wrapper-sidebar w-dropdown">
-                        <div class="pad-menu-on-hover w-dropdown-toggle">
-                          <div class="flex-horizontal start">
-                            <div class="dropdown-icon-wrapper"><img src="../../images/translate.svg" loading="lazy" width="Auto" alt="" class="image-43"></div>
-                            <div class="language-short-code"></div>
-                            <div class="text-block language-string-name">لغة</div>
-                          </div>
-                          <div class="line-rounded-icon dropdown-arrow-sidebar"></div>
-                        </div>
-                        <nav class="dropdown-list-sidebar w-dropdown-list">
-                          <div class="w-locales-list">
-                            <div role="list" class="w-locales-items">
-                              <div role="listitem" class="w-locales-item">
-                                <a hreflang="en-US" href="../../ar/black-paper/zettahash-blackpaper.html" aria-current="page" class="sidebar-dropdown-wrapper text-block-10 locale-link-item">🇻🇬 الإنجليزية</a>
-                              </div>
-                            </div>
-                          </div>
-                        </nav>
-                      </div>
-                      <a href="https://github.com/Zettahash/zettahash.webflow/issues/new" target="_blank" class="dropdown-wrapper-sidebar w-inline-block">
-                        <div class="pad-menu-on-hover">
-                          <div class="flex-horizontal start">
-                            <div class="dropdown-icon-wrapper"><img src="../../images/git.webp" loading="lazy" alt="" class="_w-h-100"></div>
-                          </div>
-                          <div>تعديل الصفحة</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-main-wrapper">
-        <section id="w-node-f29539fc-47b0-29bb-6d7c-0cf72e944248-ef5218a0" data-w-id="f29539fc-47b0-29bb-6d7c-0cf72e944248" class="section pd-top-0px pd-bottom-80px">
-          <div class="container-default">
-            <div class="inner-container _600px center">
-              <div>
-                <h1>ورق زيتاهاش الأسود</h1><img src="../../images/6611652db28111cd7b7d3504_zettahash-banner.webp" loading="lazy" sizes="(max-width: 479px) 90vw, (max-width: 991px) 94vw, (max-width: 1439px) 72vw, 780px" srcset="../../images/6611652db28111cd7b7d3504_zettahash-banner-p-500.webp 500w, ../../images/6611652db28111cd7b7d3504_zettahash-banner-p-800.webp 800w, ../../images/6611652db28111cd7b7d3504_zettahash-banner.webp 1000w" alt="graphic depicting 3 silhouette zettahash logos">
-                <div class="rich-text-block w-richtext">
-                  <h5>الكاتب الأصلي: <strong>#</strong> رافائيل 31 أكتوبر 2022</h5>
-                  <p>‍</p>
-                  <h2>ملخص</h2>
-                  <h3><strong>Abstract</strong></h3>
-                  <p>تقترح Zettahash إنشاء منظمة مستقلة لامركزية (DAO) مفتوحة المصدر وخاضعة للسيطرة العامة لصناعة تعدين البيتكوين، مع الاستفادة من قدرات البنية التحتية لـ Web3. تمثل هذه المبادرة تحولًا كبيرًا من الهياكل المؤسسية التقليدية من خلال اعتماد رمز الحوكمة اللامركزية. رمز رقمي متحرر من السيطرة المركزية والحدود والحواجز. حصة مفتوحة للجميع للمشاركة والمساهمة على مستوى العالم. كيان يتميز بالشفافية والنزاهة، ويظهر المسؤولية المالية. منظمة مستقلة مستقلة لا توجه إيراداتها إلى قلة مركزية ومميزة، مما يمنع إملاء الرواتب المرتفعة، أو المكافآت غير المبررة، أو غيرها من المعاملة التفضيلية والتعويضات للمديرين التنفيذيين، أو المديرين الإداريين، أو غيرهم من المساهمين الذين تسيطر عليهم الأغلبية.</p>
-                  <p>وبدلاً من ذلك، فإنها تكافئ بشكل جماعي حاملي الرموز اللامركزية من خلال تعزيز قيمة الرمز من خلال توفير دليل يمكن التحقق منه على الإيرادات الناتجة عن تعدين Bitcoin والعديد من المشاريع الأخرى. تتعمق هذه الوثيقة الشاملة في الجوانب المعقدة للإطار الهيكلي للعملة الرمزية، وآليات الانكماش، واستراتيجيات التخصيص، وتعقيدات عمليات التعدين اللامركزية للبيتكوين، وإطار حوكمة الشركات العامة ومشاركتها، والتفاني الذي لا يتزعزع لتعزيز اللامركزية المتوازنة والحقيقية والشفافة. ممارسات التعدين.</p>
-                  <h3><strong>Introduction</strong></h3>
-                  <p>منذ بدايتها، شهدت بيئة تعدين البيتكوين تغيرات كبيرة، تميزت باتجاه واضح نحو المركزية أو الاحتكار بقيادة مؤسسات عامة وخاصة بارزة. وفي حين لعبت هذه الكيانات دورا حاسما في تعزيز اعتماد الشبكة وقوتها ونموها وظهورها، فقد كانت النتيجة غير المقصودة تتمثل في تقليل فرصة الفرد العادي للانخراط في عملية التعدين، مما أدى إلى توطيد السلطة والنفوذ. وقد أدت الحواجز التقليدية أمام الدخول، والتي ترتبط غالباً بأساليب الاستثمار المالي مثل الأسهم المتداولة علناً في وول ستريت أو التمويل الخاص الذي تنظمه المؤسسات الخاصة، إلى تفاقم هذه الفجوة. وكاستجابة لهذه التحديات، برز Zettahash كحل مبتكر، مستعد لسد الفجوة بين مؤسسات تعدين البيتكوين المركزية واللامركزية من خلال القوة المشتركة لمجموعة نظيرة عالمية أكبر ومشاركتها في سوق الرموز الرقمية.</p>
-                  <p>الهدف الأساسي لشركة Zettahash هو استعادة التوازن والشمولية في صناعة تعدين البيتكوين، مما يعزز الجوهر الديمقراطي غير الموثوق به للبيتكوين. يتوقع زيتاهاش مستقبلًا حيث تمتد المشاركة في تعدين البيتكوين إلى ما هو أبعد من القلة المتميزة، لتصبح في متناول مجموعة متنوعة من المشاركين والمساهمين. وتهدف هذه الرؤية إلى تعزيز الحرية وإنشاء شبكة لامركزية أكثر إنصافًا وخضوعًا للمساءلة.</p>
-                  <p>‍</p>
-                  <h2><strong>Executive Summary</strong></h2>
-                  <h3><strong>The Problem Statement</strong></h3>
-                  <p>على مدى السنوات القليلة الماضية، ظهرت تطورات في قطاع تعدين البيتكوين، والذي يتميز بتوحيد كبير للتحكم في معدل التجزئة بين مجموعة متضائلة من الأفراد والشركات المؤثرة ومجموعات التعدين. يمكن أن يتحول هذا بعيدًا عن المفهوم الأساسي للامركزية، وهو مبدأ أساسي في فلسفة البيتكوين، ويطرح تحديات محتملة.</p>
-                  <p>وتثير هذه المركزية المتنامية أيضاً مخاوف أوسع نطاقاً، بما في ذلك خطر تأرجح الصناعة وظهور الميول الاحتكارية. من المهم التأكيد على أن قوة البيتكوين تكمن في نظامها غير الموثوق به، حيث يلعب القائمون بالتعدين دورًا محوريًا للحفاظ على سلامة الشبكة. إن مسؤولية القائمين بالتعدين في دعم هذه الطبيعة غير الموثوقة أمر بالغ الأهمية للحفاظ على المبادئ الأساسية التي تأسست عليها عملة البيتكوين.</p>
-                  <h3><strong>The Solution Statement</strong></h3>
-                  <p>تقدم منصة Zettahash عددًا لا يحصى من المزايا لكل من الأفراد وشبكة Bitcoin الأوسع. من خلال تمكين الأفراد، توفر Zettahash طريقًا للدفاع عن التعدين اللامركزي للبيتكوين دون الحاجة إلى الحصول على أجهزة التعدين الشخصية وإدارتها، وبالتالي تعزيز الشمولية وإمكانية الوصول إلى جمهور أوسع.</p>
-                  <p>يعمل زيتاهاش كمحفز لتحقيق اللامركزية في عملية التعدين. من خلال تبسيط الدخول إلى التعدين للأفراد، تتحدى Zettahash بنشاط التركيز السائد لمعدل التجزئة بين عدد قليل من اللاعبين الرئيسيين المختارين. كجزء من التزامنا باللامركزية الحقيقية، فإننا ندعو إلى اعتماد هياكل الإدارة اللامركزية، مثل المنظمات اللامركزية المستقلة، داخل الصناعة. يعمل هذا الجهد الجماعي على تعزيز أمن ومرونة شبكة البيتكوين، وتحصينها ضد الهجمات المحتملة وتعزيز نظام بيئي أكثر ديمقراطية وشمولية.</p>
-                  <p>علاوة على ذلك، تعد Zettahash في طليعة تحدي معايير الصناعة من خلال تشجيع الشركات على تبني نماذج الحوكمة اللامركزية مثل DAOs (المنظمات اللامركزية المستقلة). ويتوافق هذا النهج مع الرؤية الأوسع للامركزية الحقيقية، التي تتجاوز الحدود التقليدية للسيطرة المركزية.</p>
-                  <p>‍</p>
-                  <h2><strong>The Zettahash Organization</strong></h2>
-                  <h3>مهمة زيتاهاش</h3>
-                  <p>تتمثل مهمة Zettahash في إنشاء منظمة عامة خاضعة للرقابة يتم تشكيلها وتحفيزها من خلال القوة الجماعية لأعضاء مجتمعها والمشاركين فيها. كل قرار يتم اتخاذه، وكل إجراء يتم اتخاذه، وكل مسعى يتم البدء فيه يسترشد بمبدأ إفادة الجمهور والشبكة. تلتزم Zettahash بإنشاء نظام بيئي تتوافق فيه مصالح المجتمع مع نجاح Zettahash، مما يعزز العلاقة التكاملية بين حاملي Zettahash والأعضاء المنتخبين في المنظمة. يهدف Zettahash إلى تمكين الأفراد من الحصول على الملكية في منظمة مدعومة بتعدين البيتكوين.</p>
-                  <h3>رؤية زيتاهاش</h3>
-                  <p>تلتزم Zettahash بكونها كيانًا شفافًا وصادقًا لا يمنح نفسه أو المديرين التنفيذيين أو المديرين الأعضاء أرباحًا محققة ورواتب غير مبررة ومكافآت وامتيازات أخرى. وبدلاً من ذلك، تكافئ Zettahash حاملي التوكنات من خلال زيادة قيمة التوكن من خلال إيراداتها المولدة من خلال تعدين البيتكوين والمشاريع الأخرى. نحن نرى زيتاهاش كحدود جديدة للشركات المتداولة علنًا في جميع أنحاء العالم، مما يزيد من الشفافية والإنصاف والمساءلة.</p>
-                  <p>‍</p>
-                  <h2><strong>Empowering Community through Consensus</strong></h2>
-                  <p>انطلاقًا من روح المبادئ الديمقراطية، يبرز منتدى زيتاهاش للإجماع المجتمعي كمنصة يتردد فيها صدى صوت كل مشارك. واستنادا إلى عملية ديمقراطية، يستخدم المنتدى آلية التصويت التي تمنح أفراد المجتمع القدرة على رفع المواضيع ذات الأهمية. يسلط هذا القسم الضوء على كيف يمكن لهذا الإطار الديمقراطي، إلى جانب الاهتمام اليقظ من فريق Zettahash، اتخاذ القرارات المجتمعية.</p>
-                  <h3><strong>Community Forum Mechanics</strong></h3>
-                  <p>ولإظهار تفانينا في تعزيز مجتمع شامل وديناميكي، فقد وضعنا متطلبات مشاركة واضحة. لتصبح جزءًا من منصتنا، ما عليك سوى ربط حساب Zettahash (ZH) الخاص بك بمحفظة web3 التي يمكنها التحقق من ملكيتك لرمز ZH. تعتبر خطوة التحقق هذه حاسمة لتأكيد حالة المشاركين لدينا باعتبارهم حاملين حقيقيين لـ Zettahash.</p>
-                  <p>تم تصميم منصتنا لتكون شاملة، ونحن نؤمن بقوة المناقشات المفتوحة. نرحب بأي حامل (ZH) لإنشاء مشاركات ومواضيع، مما يسمح لكل عضو في مجتمعنا أن يكون له صوت. سيتم مراقبة جميع المشاركات والموضوعات من قبل الأعضاء المنتخبين للحصول على نظرة ثاقبة لاهتمامات المجتمع ونقاط المناقشة الرئيسية.</p>
-                  <h3><strong>Community-Driven Governance</strong></h3>
-                  <p>الاستفادة من أدوات التكامل مفتوحة المصدر مثل Snapshot.org، وهي منصة مصممة لتبسيط الإدارة اللامركزية للمنظمات اللامركزية المستقلة (DAOs). تعمل هذه الواجهة على تمكين أعضاء المجتمع من المشاركة بنشاط في عملية صنع القرار، مما يلغي الحاجة إلى الخبرة الفنية المتعمقة.</p>
-                  <ul role="list">
-                    <li>إدارة الاقتراحات: تسمح لأي عضو في المجتمع بإنشاء مقترحات تغطي مجموعة واسعة من المواضيع، بدءًا من ترقيات البروتوكول وحتى طلبات التمويل.</li>
-                    <li>عملية التصويت:<br>يشارك المستخدمون الذين يتمتعون بقوة التصويت في عملية التصويت بدون غاز خلال إطار زمني محدد، ويعبرون عن تفضيلاتهم باستخدام الرموز الأصلية.</li>
-                  </ul>
-                  <ul role="list">
-                    <li>الإجماع والنصاب:<br>قد تحدد DAOs الحد الأدنى من المشاركة (النصاب القانوني) ومعايير نسبة الموافقة على المقترحات لتمريرها، مما يضمن مشاركة المجتمع على نطاق واسع.</li>
-                  </ul>
-                  <ul role="list">
-                    <li>حل الطبقة الثانية:<br>تعمل كحل من الطبقة الثانية على سلاسل الكتل الحالية لتقليل التكاليف والازدحام عن طريق تخزين بيانات التصويت خارج السلسلة.</li>
-                  </ul>
-                  <ul role="list">
-                    <li>آلية التصويت بدون غاز:<br>استخدم آلية غير غازية، مما يسمح للمستخدمين بتوقيع الرسائل باستخدام محافظهم للإدلاء بالأصوات دون تكبد رسوم المعاملات.</li>
-                  </ul>
-                  <ul role="list">
-                    <li>تنفيذ المقترحات المعتمدة:<br>بمجرد حصول الاقتراح على النصاب القانوني والموافقة المطلوبة، يتم تشغيل العقود الذكية لتنفيذ الإجراءات المقترحة تلقائيًا.</li>
-                  </ul>
-                  <ul role="list">
-                    <li>الشفافية والتدقيق:<br>يتم تسجيل جميع بيانات التصويت على blockchain، مما يوفر الشفافية وقابلية التدقيق، وهو أمر بالغ الأهمية للتحقق من نتائج كل اقتراح.</li>
-                  </ul>
-                  <ul role="list">
-                    <li>واجهة سهلة الاستخدام:<br>تصميم يعطي الأولوية لسهولة الاستخدام، مما يمكّن أفراد المجتمع من المشاركة في الإدارة اللامركزية دون الحاجة إلى خبرة فنية واسعة أو تكبد تكاليف معاملات عالية.</li>
-                  </ul>
-                  <p>‍</p>
-                  <h2><strong>Transparent Accountability</strong></h2>
-                  <h3><strong>Treasury &amp; Multisig</strong></h3>
-                  <p>المحافظ متعددة التوقيع (محفظة multisig) هي نوع من محافظ الخزانة التي تتطلب مفاتيح خاصة متعددة للسماح بالمعاملة. غالبًا ما يستخدم هذا المفهوم في المنظمات اللامركزية المستقلة (DAOs) لتعزيز الأمن واللامركزية.</p>
-                  <h3><strong>Multi-Signature Wallet in a DAO:</strong></h3>
-                  <ol start="" role="list">
-                    <li>إنشاء المحفظة:<br>- يتم إعداد محفظة متعددة التوقيع بعدد محدد مسبقًا من التوقيعات المطلوبة (الموقعين أو المفاتيح) للموافقة على المعاملة.<br>- على سبيل المثال، تتطلب محفظة 3 من 5 multisig ثلاثة من الأعضاء الخمسة المنتخبين للتوقيع على أي معاملة حتى تكون صالحة.</li>
-                    <li>الأعضاء المنتخبون:<br>- في سياق DAO، غالبًا ما يتم انتخاب الأعضاء لتمثيل المجتمع أو أصحاب المصلحة.<br>- يتم منح هؤلاء الأعضاء المنتخبين مفاتيح خاصة أو الوصول إلى مجموعتهم الفريدة من المفاتيح الخاصة المرتبطة بمحفظة multisig.</li>
-                    <li>ترخيص المعاملة:<br>- عند بدء المعاملة، يجب توقيعها من قبل العدد المطلوب من الأعضاء.<br>- في سيناريو 3 من 5، على سبيل المثال، سيتعين على ثلاثة أعضاء منتخبين التوقيع على المعاملة حتى يتم تنفيذها.</li>
-                    <li>تعزيز الأمن:<br>- يعمل إعداد multisig على تعزيز الأمان لأن النشاط الضار أو النشاط الضار من جانب فرد واحد لا يكفي لتنفيذ المعاملة.<br>- يوزع المسؤولية بين أطراف متعددة، مما يقلل من مخاطر الوصول غير المصرح به.</li>
-                  </ol>
-                  <h3><strong>Relationship to a Democratic Elected Congress:</strong></h3>
-                  <p>يحمل مفهوم المحفظة متعددة التوقيع مع الأعضاء المنتخبين في DAO أوجه تشابه مع هيكل الإدارة لمؤتمر ديمقراطي منتخب:</p>
-                  <ol start="" role="list">
-                    <li>التمثيل:<br>- الأعضاء المنتخبون في كلا السيناريوهين يمثلون مصالح المجتمع.<br>- في مؤتمر ديمقراطي منتخب، يتم اختيار الممثلين من خلال عملية التصويت. في DAO، يجوز لحاملي ZH التصويت لممثلين.</li>
-                    <li>صناعة القرار:<br>- يتضمن كلا النظامين عملية صنع القرار حيث يجب أن يوافق عدد معين من الأعضاء المنتخبين على اقتراح أو قرار.<br>- في الكونغرس الديمقراطي، قد تكون هناك حاجة لأغلبية الأصوات لتمرير التشريع. في المحفظة متعددة التوقيع، مطلوب أغلبية الموقعين للموافقة على المعاملة.</li>
-                    <li>الضوابط والتوازنات:<br>- يقدم إعداد multisig، مثل النظام الديمقراطي، الضوابط والتوازنات. لا يمكن لأي فرد أو مجموعة صغيرة اتخاذ قرارات من جانب واحد دون موافقة الهيئة المنتخبة الأوسع، والتي في هذه الحالة، Zettahash DAO.</li>
-                    <li>الحوكمة الشفافة:<br>- يهدف كلا النظامين إلى توفير حوكمة شفافة، حيث يتم اتخاذ القرارات بشكل علني، ويتمتع المجتمع برؤية كاملة لعملية صنع القرار.</li>
-                  </ol>
-                  <h3><strong>Allocation of Funds</strong></h3>
-                  <h4><strong>Capital Allocation and Commitments</strong></h4>
-                  <p>سيتم تخصيص المساهمات حصريًا للنفقات الرأسمالية (CapEx) ونفقات التشغيل (OpEx) المتعلقة بعمليات تعدين البيتكوين الخاصة بالمؤسسة. ستغطي CapEx النفقات على سبيل المثال: شراء آلات التعدين الرقمي للبيتكوين، والبنية التحتية، واقتناء المعدات، وما إلى ذلك. وتشمل OpEx اتفاقيات الاستضافة، ورواتب فريق التشغيل، وتكاليف الكهرباء، وغيرها من الضروريات التشغيلية. يتم إعادة استثمار صافي أرباح تعدين البيتكوين إما عن طريق الاستحواذ على أسهم Zettahash مباشرة من السوق العالمية بأسعار السوق السائدة (إعادة شراء حصة السوق) أو عن طريق تخصيص هذه الأموال لدعم التوسع المستمر في عمليات التعدين والمشاريع الأخرى. يقرر DAO أفضل مسار للعمل الذي يجب اتخاذه.</p>
-                  <h4><strong>Asset Ownership and Financial Transparency</strong></h4>
-                  <p>تلتزم شركة Zettahash التزامًا تامًا بالحفاظ على درجة استثنائية من الشفافية في الكشف عن مجموعة واسعة من أصولها. يتضمن ذلك الكشف الكامل عن جميع الأصول المملوكة للمنظمة؛ المالية القابلة للتدقيق بشكل كامل متاحة للجمهور.</p>
-                  <h4><strong>Wallet Addresses and Financial Assets</strong></h4>
-                  <p>وكجزء لا يتجزأ من التزامنا بالشفافية، سنكشف علنًا عن عناوين المحفظة المرتبطة بتعدين ومقتنيات البيتكوين وغيرها من أصول التشفير البارزة، على سبيل المثال لا الحصر، "العملات المستقرة". بالإضافة إلى ذلك، ستمتد هذه الشفافية إلى البيانات المصرفية، مما يوفر رؤية محدودة ولكن مفيدة لمقتنياتنا الورقية، إلى جانب نظرة ثاقبة لمحفظتنا المتنوعة التي تشمل عملات وممتلكات عقارية مختلفة.</p>
-                  <h4><strong>Tangible Assets and Expansion</strong></h4>
-                  <p>إن الأصول التي تشكل جزءًا لا يتجزأ من عملياتنا تتجاوز النظام البيئي الرقمي. نحن فخورون بعرض ملكيتنا لآلات التعدين الرقمية والمعدات والبنية التحتية والممتلكات العقارية التي تساهم في الحيوية الشاملة وتوسيع Zettahash.</p>
-                  <h4><strong>Financial Accountability</strong></h4>
-                  <p>وتماشيًا مع التزامنا بالشفافية، ستتخذ Zettahash خطوات استباقية لمشاركة البيانات في الوقت الفعلي بشكل مسؤول. في البداية، سيتم تسهيل ذلك من خلال المشاركة في مجمع تعدين عام أو خاص، مما يمنح المشاركين المهتمين إمكانية الوصول إلى أداء مالي حقيقي وفي الوقت المناسب.</p>
-                  <p>‍</p>
-                  <h2><strong>Reference and Inspiration:</strong></h2>
-                  <p>-<strong>Satoshi Nakamoto</strong>, the pseudonymous creator of Bitcoin, outlined his motivations and intentions in the original Bitcoin whitepaper titled "<a href="https://bitcoin.org/bitcoin.pdf" target="_blank">البيتكوين: نظام نقدي إلكتروني من نظير إلى نظير</a>,“- published October 31, 2008. While we cannot definitively know Satoshi's true intentions, the whitepaper provides insights into the goals and purposes behind the creation of Bitcoin.</p>
-                  <p><strong>1. Decentralization and Peer-to-Peer Transactions: </strong>Satoshi aimed to create a decentralized digital currency system that would allow individuals to conduct peer-to-peer transactions without the need for intermediaries like banks or financial institutions. This would enable direct transfer of value between parties, reducing the need for trust in third parties.</p>
-                  <p><strong>2. Eliminating Double Spending: </strong>One of the key challenges in digital currency systems was the potential for double spending—spending the same digital token more than once. Satoshi proposed a solution using a decentralized consensus mechanism, known as proof-of-work, to prevent double spending and ensure the integrity of transactions.</p>
-                  <p><strong>3. Openness and Transparency: </strong>Bitcoin's design emphasized transparency through a public ledger called the blockchain. Every transaction is recorded on the blockchain, providing an open and verifiable history of all transactions.</p>
-                  <p><strong>4. Limited Supply:</strong> Bitcoin was designed with a capped supply of 21 million coins to prevent inflation and maintain scarcity, similar to precious metals like gold. This scarcity was intended to ensure that the value of Bitcoin would not be easily diluted over time.</p>
-                  <p><strong>5. Financial Inclusion:</strong> Satoshi's vision included providing access to financial services for people who are unbanked or underbanked, allowing them to participate in the global economy and have more control over their own finances.</p>
-                  <p><strong>6. Censorship Resistance:</strong> By operating on a decentralized network, Bitcoin was intended to resist censorship and control by any single entity or government. Transactions could not be easily blocked or controlled, giving users greater financial freedom.</p>
-                  <p><strong>7. Security and Anonymity:</strong> While Bitcoin transactions are recorded on a public ledger, they can be conducted pseudonymously. This provides a certain level of privacy and security for users, especially compared to traditional financial systems.</p>
-                  <p>‍</p>
-                  <p>It's important to note that while these were the stated goals and purposes outlined by <strong>Satoshi Nakamoto</strong>, Bitcoin's evolution and use cases have expanded beyond these initial intentions. Over time, Bitcoin has become a store of value, a speculative investment, and a subject of technological innovation. Different individuals and groups have interpreted and used Bitcoin in various ways, leading to a diverse range of opinions about its purpose and potential.</p>
-                  <p><strong><br>—</strong>“Safeguarding the integrity and decentralization of Bitcoin begins by promoting the decentralization of Bitcoin mining companies."<strong> - #Raphael</strong></p>
-                  <p>‍</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-    <div class="w-layout-hflex container footer-container">
-      <div class="footer"><img sizes="100vw" srcset="../../images/blur3-p-500.webp 500w, ../../images/blur3.webp 800w" alt="" src="../../images/blur3.webp" loading="lazy" class="blur-footer subtle">
-        <div class="w-layout-vflex company-information">
-          <div class="w-layout-vflex company-name-tagline-container">
-            <div class="zh-logo-2"><img src="../../images/zettahash-webflow.svg" loading="lazy" alt="" class="zettahash-iconography"></div>
-            <div>نحن نعيد تعدين البيتكوين إلى الناس!</div>
-          </div>
-          <div class="w-layout-hflex zettahash-company-address-and-flag-container"><img src="../../images/Flag_of_the_Marshall_Islands.svg.png" loading="lazy" width="Auto" sizes="(max-width: 479px) 100vw, (max-width: 1279px) 94.9296875px, (max-width: 1439px) 7vw, 94.9296875px" alt="Flag of the Marshall Islands
-" srcset="../../images/Flag_of_the_Marshall_Islands.svg-p-500.png 500w, ../../images/Flag_of_the_Marshall_Islands.svg-p-800.png 800w, ../../images/Flag_of_the_Marshall_Islands.svg-p-1080.png 1080w, ../../images/Flag_of_the_Marshall_Islands.svg.png 1200w" class="mi-flag-2">
-            <div class="w-layout-vflex">
-              <h4 class="cosy">زيتاهاش داو ذ.م.م</h4>
-              <div>ص.ب 852، طريق لونغ آيلاند<br>ماجورو, جزر مارشال MH 96960</div>
-            </div>
-          </div>
-          <div class="w-layout-hflex zettahash-company-address-and-flag-container"><img src="../../images/Flag_of_the_British_Virgin_Islands.svg_1.webp" loading="lazy" width="Auto" sizes="(max-width: 479px) 100vw, 100px" alt="" srcset="../../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 500w, ../../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 800w, ../../images/Flag_of_the_British_Virgin_Islands.svg_1Flag_of_the_British_Virgin_Islands.svg.webp 1080w, ../../images/Flag_of_the_British_Virgin_Islands.svg_1.webp 1200w" class="mi-flag-2">
-            <div class="w-layout-vflex">
-              <h4 class="cosy">زك المحدودة</h4>
-              <div>الطابق الثالث، مبنى يامراج، ساحة السوق <br>ص.ب. صندوق بريد 3175 رود تاون، تورتولا VG1110</div>
-            </div>
-          </div>
-          <div class="w-layout-vflex company-name-tagline-container">
-            <a href="https://flat18.co.uk" target="_blank" class="link-2">تم تنشيطه بواسطة Flat 18⚡</a>
-          </div>
-        </div>
-        <div class="w-layout-hflex links-organiser">
-          <div class="w-layout-vflex footer-link-section">
-            <h4 class="links-organiser-heading">روابط</h4>
-            <ul role="list" class="foolter-link-list w-list-unstyled">
-              <li class="foolter-link-list-item">
-                <a href="https://discord.gg/BcK7NaA5" target="_blank" class="footer-link-2">إجماع</a>
-                <a href="https://hashboard.zettahash.org" target="_blank" class="footer-link-2">#هاش بورد</a>
-                <a href="../../become-a-hasher.html" class="footer-link-2">يساهم</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-layout-vflex footer-link-section">
-            <h4 class="links-organiser-heading">يدعم</h4>
-            <ul role="list" class="foolter-link-list w-list-unstyled">
-              <li class="foolter-link-list-item">
-                <a href="https://github.com/Zettahash/bugs/issues/new" class="footer-link-2">الإبلاغ عن خطأ</a>
-                <a href="https://stats.uptimerobot.com/yGonKu6AE6" class="footer-link-2">حالة الخدمة</a>
-                <a href="https://gopluslabs.io/token-security/1/0xb630d7388e3466af4952b6e5d8db63d828140e5d" target="_blank" class="footer-link-2">أمان الرمز المميز</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-layout-vflex footer-link-section">
-            <h4 class="links-organiser-heading">منظمة</h4>
-            <ul role="list" class="foolter-link-list w-list-unstyled">
-              <li class="foolter-link-list-item">
-                <a href="../../ar/org/globe-map.html" class="footer-link-2">خريطة الكرة الأرضية</a>
-                <a href="../../ar/black-paper/zettahash-blackpaper.html" aria-current="page" class="footer-link-2 w--current">ورقة سوداء</a>
-                <a href="../../ar/org/terms-of-service.html" class="footer-link-2">شروط الخدمة</a>
-                <a href="../../ar/org/privacy-policy.html" class="footer-link-2">سياسة الخصوصية</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-layout-vflex footer-link-section">
-            <h4 class="links-organiser-heading">ابقى على تواصل</h4>
-            <ul role="list" class="foolter-link-list w-list-unstyled">
-              <li class="foolter-link-list-item">
-                <a href="https://github.com/Zettahash" target="_blank" class="footer-link-2">جيثب</a>
-                <a href="https://t.me/+16S5euQ4PQFiMzNk" target="_blank" class="footer-link-2">برقية</a>
-                <a href="mailto:dao@zettahash.org" class="footer-link-2">بريد إلكتروني</a>
-                <a href="https://twitter.com/zettahash_org" target="_blank" class="footer-link-2">اكس (تويتر)</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=664de4f406f296cc175c3570" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="../../js/webflow.js" type="text/javascript"></script>
-  <script src="https://cdn.zettahash.org/js/zettahash.org.js"></script>
-  <style>
-iframe.iframe-embed {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: none;
-    padding: 0;
-    margin: 0;
-    background-image: url(https://uploads-ssl.webflow.com/65d4f59afabe990d05bd8b5f/65d53d1b579afd8381790d33_spinner-animated.svg);
-    background-size: 80px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-.w-richtext figure img {
-    border-radius: 10px;
-}
-</style>
-
-</body></html>
