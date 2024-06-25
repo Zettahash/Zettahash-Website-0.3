@@ -5691,7 +5691,7 @@ figcaption {
   transform: rotate(-26deg)translate(-50%, -50%);
 }
 
-.image-23 {
+.mobile-phone-3 {
   display: none;
 }
 
@@ -5703,7 +5703,7 @@ figcaption {
   height: 55px;
 }
 
-.image-25 {
+.mobile-phone-1 {
   height: 600px;
   max-height: none;
 }
@@ -5713,7 +5713,7 @@ figcaption {
   pointer-events: auto;
 }
 
-.image-27 {
+.mobile-phone-2 {
   height: 600px;
   margin-left: -12%;
 }
@@ -8732,18 +8732,18 @@ figcaption {
     border-radius: 4vw;
   }
 
-  .image-23 {
+  .mobile-phone-3 {
     display: block;
   }
 
-  .image-25 {
+  .mobile-phone-1 {
     width: 50%;
     max-width: none;
     height: 100%;
     display: none;
   }
 
-  .image-27 {
+  .mobile-phone-2 {
     width: 76%;
     max-width: none;
     height: auto;
@@ -9499,11 +9499,11 @@ figcaption {
     border-radius: 3vw;
   }
 
-  .image-25 {
+  .mobile-phone-1 {
     height: auto;
   }
 
-  .image-27 {
+  .mobile-phone-2 {
     display: none;
     overflow: visible;
   }
