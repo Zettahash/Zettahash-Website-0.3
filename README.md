@@ -1,6 +1,8 @@
 
 # Zettahash DAO Website
 
+![badge](https://img.shields.io/badge/Current_Deployment_Environment-GitHub_Pages-blue)
+
 ## Project Goals
 
 Welcome to the Zettahash DAO website repository! This project is the landing page for a decentralised bitcoin mining DAO project called Zettahash DAO. Our main goals are:
