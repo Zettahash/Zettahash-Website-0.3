@@ -215,7 +215,7 @@ const copyRootHtmlFiles = (srcBaseDir, destBaseDir) => {
     await processDirectoryForTranslations(srcDir, keys, translations, lang);
   }
 
-  const topLevelFolders = ['videos', 'css', 'js', 'images', 'fonts'];
+  const topLevelFolders = ['videos', 'css', 'js', 'images', 'fonts', 'static'];
   copyTopLevelFolders(topLevelFolders, path.join(__dirname, 'src'), distDir);
   copyRootHtmlFiles(path.join(__dirname, 'src'), distDir);
 
